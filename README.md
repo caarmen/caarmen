@@ -23,11 +23,11 @@ Here are some repository highlights:
      - Kotlin library: [french-revolutionary-calendar](https://github.com/caarmen/french-revolutionary-calendar) 
      - Android wear complications app (Java): [FRCComplication](https://github.com/caarmen/FRCComplication)
      - ICS calendar generator (Kotlin): [french-revolutionary-calendar-generator](https://github.com/caarmen/french-revolutionary-calendar-generator)
-   - **Sunrise/Sunset** java library: [SunriseSunset](https://github.com/caarmen/SunriseSunset)
    - **Nounours** (simple teddy bear that reacts to clicks and "moves" around semi-randomly):
      - Android app (Kotlin): [nounours-android](https://github.com/caarmen/nounours-android)
      - iOS app (Objective-C): [nounours-ios](https://github.com/caarmen/nounours-ios)
      - X11 app (including screensaver) (C): [nounours](https://github.com/caarmen/nounours)
+   - **Sunrise/Sunset** java library: [SunriseSunset](https://github.com/caarmen/SunriseSunset)
 
 
 
