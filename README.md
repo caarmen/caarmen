@@ -1,8 +1,9 @@
 ### Hi there 👋
 
-I'm a software developer currently focused on mainly on Python for backend projects professionally, and for random personal projects.
+I'm a software developer currently focused on mainly on Python and Node.js for backend projects professionally, and Python for random personal projects.
 
 Previously I developed mobile apps (mostly Android). You'll find a few repositories here for Android and iOS apps.
+
 I've also dabbled in front end (vanilla Javascript for now).
 
 Here are some repository highlights:
