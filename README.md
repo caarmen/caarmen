@@ -22,6 +22,11 @@ Here are some repository highlights:
     - Android app (Kotlin): [nounours-android](https://github.com/caarmen/nounours-android)
     - iOS app (Objective-C): [nounours-ios](https://github.com/caarmen/nounours-ios)
     - X11 app (including screensaver) (C): [nounours](https://github.com/caarmen/nounours)
+  - Miscellaneous personal Python projects:
+    - **Sudoku solver**: package and CLI: [sudokusolver](https://github.com/caarmen/sudokusolver)
+    - **Cine-today RSS**: server endpoint that returns an RSS feed of movies showing in selected theaters, today: [cine-today-rss](https://github.com/caarmen/cine-today-rss)
+    - **Image resizer**: server endpoint to resize an image: [image-resizer](https://github.com/caarmen/image-resizer)
+    - **Flashcards**: text interface to quiz you on flashcards read from a CSV file: [flashcards](https://github.com/caarmen/flashcards)
 
 
 There are some other more obscure little projects here as well, in QBasic and Prolog for example.
