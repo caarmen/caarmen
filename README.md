@@ -10,7 +10,7 @@ Here are some repository highlights:
     - Android app (Kotlin): [poet-assistant](https://github.com/caarmen/poet-assistant)
     - iOS app (Swift): [poet-assistant-ios](https://github.com/caarmen/poet-assistant-ios)
     - Website/Electron app (Javascript): [poet-assistant-web](https://github.com/caarmen/poet-assistant-web)
-    - Qt Desktop app (C++): [poet-assistant-desktop)(https://github.com/caarmen/poet-assistant-desktop)
+    - Qt Desktop app (C++): [poet-assistant-desktop](https://github.com/caarmen/poet-assistant-desktop)
     - REST api in Spring boot (Kotlin): [poet-assistant-server](https://github.com/caarmen/poet-assistant-server)
   - **French revolutionary calendar**:
     - Android widget (Kotlin): [FRCAndroidWidget](https://github.com/caarmen/FRCAndroidWidget)
