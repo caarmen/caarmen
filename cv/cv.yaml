@@ -39,18 +39,18 @@ Skills:
   - General:
     - Technical design, refactoring, modularization
     - Continuous integration, Jenkins pipeline, Github Actions
-    - Git, GitHub, Pull Request review, Git flow
+    - Git, GitHub, Pull Request review, Gitflow, trunk-based development
     - Unit test, integration test, end-to-end test, code coverage, sonar
     - Object-oriented programming, functional programming, scripts
   - Backend:
     - YAML, Swagger, OpenAPI, ReDoc, MySQL/MariaDB
-    - Pytest, mocha
+    - Pytest, Mocha
     - Django REST framework, Node.js
   - Android:
     - MVVM, Room, LiveData, Data Binding, Paging, Material Design
     - Google Play Billing, Espresso, Robolectric, Mockito
   - Hobby/Personal projects:
-    - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron
+    - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
 Publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     coauthors: Ahmed Id Oumohmed, Max Mignotte, Jian-Yun Nie
@@ -131,7 +131,7 @@ Experiences:
 
       Culture of documentation, testing and collaboration.
     environment: >
-      Django REST framework (DRF), Python, Express (Node.js), AMQP (RabbitMQ), Unit and E2E tests (pytest, mocha),
+      Django REST framework (DRF), Python, Express (Node.js), AMQP (RabbitMQ), Unit and E2E tests (pytest, Mocha),
       Swagger/OpenAPI/ReDoc, MariaDB/MySQL, GitHub, Jenkins, Kibana, gateway, GraphQL
   - title: Mobile Lead
     company: Libon
@@ -248,7 +248,10 @@ Experiences:
       Developed a software to monitor equipment in the RATP stations.
     environment: C++, GCC, GDB, Makefile, Java, SNMP, Linux, CVS
   - title: Software Developer/Consultant
-    company: Network Equipment Technologies (Net.com)
+    company: Micromuse
+    company_logo: micromuse.png
+    customer: Network Equipment Technologies (Net.com)
+    customer_logo: net_com.png
     start: 2003-07-01
     end: 2005-02-28
     location: Remote, Part-time
@@ -259,6 +262,7 @@ Experiences:
       Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Member of Technical Staff
     company: Lumos Technologies
+    company_logo: lumos.png
     start: 2000-11-01
     end: 2002-12-31
     location: Santa Monica, California
@@ -267,6 +271,7 @@ Experiences:
     environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Client Integration Engineer
     company: Homepage.com
+    company_logo: homepage.png
     start: 2000-05-01
     end: 2000-10-31
     location: Los Angeles, California
