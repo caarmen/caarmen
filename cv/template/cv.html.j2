@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ MainInfo["name"] }}</title>
+    <title>{{ main_info["name"] }}</title>
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.js"></script>
@@ -14,9 +14,9 @@
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <img class="avatar" src="assets/avatar.jpg" alt="">
             <div>
-                <div class="mdc-top-app-bar__title">{{ MainInfo["name"] }}</div>
-                <div class="mdc-top-app-bar__title mdc-typography--subtitle1">{{MainInfo["title"]}} -
-                    {{MainInfo["location"]}}
+                <div class="mdc-top-app-bar__title">{{ main_info["name"] }}</div>
+                <div class="mdc-top-app-bar__title mdc-typography--subtitle1">{{main_info["title"]}} -
+                    {{main_info["location"]}}
                 </div>
             </div>
         </section>
@@ -29,30 +29,26 @@
                 <div class="card-content">
                     <div class="mdc-typography--headline6">Contact</div>
                     <div class="key-attributes">
-                        {% for contact in Contacts %}
-                        {% for contact_key, contact_item in contact.items() %}
+                        {% for contact in contacts %}
                         <div class="key-attribute">
-                            <div class="key-attribute-icon"><img src="assets/{{ contact_item['Icon']}}"
-                                                                 alt="{{contact_key}}"
-                                                                 title="{{contact_key}}"></div>
-                            <div class="key-attribute-text">{{contact_item["Address"]}}</div>
+                            <div class="key-attribute-icon"><img src="assets/{{ contact['icon']}}"
+                                                                 alt="{{contact['name']}}"
+                                                                 title="{{contact['name']}}"></div>
+                            <div class="key-attribute-text">{{contact["address"]}}</div>
                         </div>
-                        {% endfor %}
                         {% endfor %}
                     </div>
                     <div class="mdc-typography--headline6">Languages</div>
                     <div class="key-attributes">
-                        {% for language in Languages %}
-                        {% for language_key, language_item in language.items() %}
+                        {% for language in languages %}
                         <div class="key-attribute">
-                            <div class="key-attribute-icon">{{language_item["icon"]}}</div>
-                            <div class="key-attribute-text">{{language_key}} ({{language_item["level"]}})</div>
+                            <div class="key-attribute-icon">{{language["icon"]}}</div>
+                            <div class="key-attribute-text">{{language["name"]}} ({{language["level"]}})</div>
                         </div>
-                        {% endfor %}
                         {% endfor %}
                     </div>
                     <div class="mdc-typography--headline6">Characteristics</div>
-                    {% for characteristic in Characteristics%}
+                    {% for characteristic in characteristics%}
                     <div class="key-attribute">
                         <div class="key-attribute-icon"><i class="material-icons">check</i></div>
                         <div class="key-attribute-text">{{characteristic}}</div>
@@ -64,7 +60,7 @@
                 <div class="card-content principles">
                     <div class="card-title mdc-typography--headline5">Principles</div>
                     <ul class="mdc-list mdc-list--icon-list mdc-list--dense mdc-list--textual-list	">
-                        {% for principle in Principles %}
+                        {% for principle in principles %}
                         <li class="mdc-list-item">
                             <span class="mdc-list-item__ripple"></span>
                             <span class="mdc-list-item__text">{{principle}}</span>
@@ -79,7 +75,7 @@
                 <div class="card-content principles">
                     <div class="card-title mdc-typography--headline5">Skills</div>
                     <ul class="mdc-list mdc-list--icon-list mdc-list--dense mdc-list--textual-list	">
-                        {% for skill_category in Skills%}
+                        {% for skill_category in skills%}
                         {% for skill_category_name, skill_names in skill_category.items() %}
                         <li class="mdc-list-item">
                             <span class="mdc-list-item__ripple"></span>
@@ -100,7 +96,7 @@
     <div class="pagebreak"></div>
     <div>
         <div class="panel-title mdc-typography--headline4">Experiences</div>
-        {% for experience in Experiences%}
+        {% for experience in experiences%}
         {% if not experience["hide"] %}
         <div class="experience mdc-card--outlined">
             <div class="card-content">
@@ -171,7 +167,7 @@
         <div class="mdc-card--outlined">
             <div class="card-content">
                 <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
-                    {% for publication in Publications %}
+                    {% for publication in publications %}
                     <li class="mdc-list-item">
                         <span class="mdc-list-item__ripple"></span>
                         <div class="mdc-list-item__text">
@@ -191,7 +187,7 @@
         <div class="mdc-card--outlined">
             <div class="card-content">
                 <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
-                    {% for diploma in Education %}
+                    {% for diploma in education %}
                     <li class="mdc-list-item">
                         <span class="mdc-list-item__ripple"></span>
                         <span class="mdc-list-item__graphic"><img src="assets/{{diploma['logo']}}" alt=""></span>

@@ -12,7 +12,7 @@ def to_template_date(date: date) -> str:
 
 
 def yaml_to_template(cv_yaml: Dict[str, Any]) -> Dict[str, Any]:
-    for experience in cv_yaml["Experiences"]:
+    for experience in cv_yaml["experiences"]:
         start_date = experience["start"]
         end_date = experience.get("end")
 
