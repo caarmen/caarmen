@@ -253,7 +253,7 @@ Experiences:
     end: 2005-02-28
     location: Remote, Part-time
     description: >
-      Customization of the Lumos Technologies network equipment monitoring software, which was acquired by Micromuse, 
+      Customization of the Lumos Technologies network equipment monitoring software, which was acquired by Micromuse,
       for the customer Net.com.
     environment: >
       Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
@@ -263,24 +263,21 @@ Experiences:
     end: 2002-12-31
     location: Santa Monica, California
     team: 7 Devs
-    description: >
-      Developed features for a network equipment monitoring software.
+    description: Developed features for a network equipment monitoring software.
     environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Client Integration Engineer
     company: Homepage.com
     start: 2000-05-01
     end: 2000-10-31
     location: Los Angeles, California
-    description: >
-      Customized the B-B homepage.com software for different clients.
+    description: Customized the B-B homepage.com software for different clients.
     environment: Perl, C, BSD, CVS
   - title: Programmer
     company: Football.com
     start: 1998-12-01
     end: 2000-04-30
     location: Remote, Part-time
-    description: >
-      Developed a MahJong game with an American football theme.
+    description: Developed a MahJong game with an American football theme.
     environment: Java Applet
   - title: Design engineer
     hide: True # Irrelevant and old

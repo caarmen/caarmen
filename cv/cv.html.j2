@@ -94,6 +94,7 @@
             </div>
         </div>
     </div>
+    <div class="pagebreak"></div>
     <div>
         <div class="panel-title mdc-typography--headline4">Experiences</div>
         {% for experience in Experiences%}
@@ -152,9 +153,7 @@
                     {{experience["summary"]}}
                 </div>
                 {% endif %}
-                <div class="experience-description mdc-typography--body1">
-                    {{experience["description"]}}
-                </div>
+                <div class="experience-description mdc-typography--body1">{{experience["description"]}}</div>
                 <div class="experience-skills">{{experience["environment"]}}
                 </div>
             </div>
