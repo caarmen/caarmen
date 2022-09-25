@@ -9,9 +9,11 @@
     --app-bar-row-height: 64px;
 }
 @media print {
+    .mdc-top-app-bar {
+        position: relative;
+    }
     .pagebreak { 
         page-break-before: always; 
-        padding-top: 64px;
     } /* page-break-after works, as well */
 }
 html {
