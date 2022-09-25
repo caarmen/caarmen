@@ -42,15 +42,16 @@ body {
     border-radius: 50%;
 }
 .content {
-    display: table-row;
+    display: grid;
+    grid-template-columns: max-content auto;
 }
 .panel-sidebar{
     width: 8cm;
-    display: table-cell;
+    grid-column: 1/2;
     padding-right: 16px;
 }
 .panel-main{
-    display: table-cell;
+    grid-column: 2/2;
 }
 .mdc-card--outlined {
     margin-bottom: 16px;

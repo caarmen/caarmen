@@ -70,6 +70,8 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="panel-main">
             <div class="mdc-card--outlined">
                 <div class="card-content principles">
                     <div class="card-title mdc-typography--headline5">Skills</div>
@@ -91,74 +93,74 @@
                 </div>
             </div>
         </div>
-        <div class="panel-main">
-            <div class="panel-title mdc-typography--headline4">Experiences</div>
-            {% for experience in Experiences%}
-            {% if not experience["hide"] %}
-            <div class="experience mdc-card--outlined">
-                <div class="card-content">
-                    {% if experience["company_logo"]%}
-                    <div class="experience-company-logo">
-                        <img src="{{experience['company_logo']}}"
-                             title="{{experience['company']}}"
-                             alt="{{experience['company']}}">
-                        {% if experience["customer_logo"]%}
-                        <img src="{{experience['customer_logo']}}"
-                             title="{{experience['customer']}}"
-                             alt="{{experience['customer']}}">
-                        {% endif %}
-                    </div>
-                    <div class="experience-title">{{experience["title"]}}</div>
-                    {% else %}
-                    <div class="experience-title">{{experience["title"]}}</div>
-                    <div class="experience-company">{{experience['company']}}</div>
+    </div>
+    <div>
+        <div class="panel-title mdc-typography--headline4">Experiences</div>
+        {% for experience in Experiences%}
+        {% if not experience["hide"] %}
+        <div class="experience mdc-card--outlined">
+            <div class="card-content">
+                {% if experience["company_logo"]%}
+                <div class="experience-company-logo">
+                    <img src="{{experience['company_logo']}}"
+                         title="{{experience['company']}}"
+                         alt="{{experience['company']}}">
+                    {% if experience["customer_logo"]%}
+                    <img src="{{experience['customer_logo']}}"
+                         title="{{experience['customer']}}"
+                         alt="{{experience['customer']}}">
                     {% endif %}
-                    <div class="mdc-chip-set" role="grid">
-                        <div class="mdc-chip" role="row">
-                            <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">calendar_today</i>
-                            <div class="mdc-chip__ripple"></div>
-                            <span role="gridcell">
+                </div>
+                <div class="experience-title">{{experience["title"]}}</div>
+                {% else %}
+                <div class="experience-title">{{experience["title"]}}</div>
+                <div class="experience-company">{{experience['company']}}</div>
+                {% endif %}
+                <div class="mdc-chip-set" role="grid">
+                    <div class="mdc-chip" role="row">
+                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">calendar_today</i>
+                        <div class="mdc-chip__ripple"></div>
+                        <span role="gridcell">
                                     <span role="button" tabindex="-1" class="mdc-chip__primary-action">
                                         <span class="mdc-chip__text">{{experience["dates"]}}</span>
                                     </span>
                                 </span>
-                        </div>
-                        {% if experience["team"] %}
-                        <div class="mdc-chip" role="row">
-                            <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">group</i>
-                            <div class="mdc-chip__ripple"></div>
-                            <span role="gridcell">
+                    </div>
+                    {% if experience["team"] %}
+                    <div class="mdc-chip" role="row">
+                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">group</i>
+                        <div class="mdc-chip__ripple"></div>
+                        <span role="gridcell">
                                     <span role="button" tabindex="-1" class="mdc-chip__primary-action">
                                         <span class="mdc-chip__text">{{experience["team"]}}</span>
                                     </span>
                                 </span>
-                        </div>
-                        {% endif %}
-                        <div class="mdc-chip" role="row">
-                            <div class="mdc-chip__ripple"></div>
-                            <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">fmd_good</i>
-                            <span role="gridcell">
+                    </div>
+                    {% endif %}
+                    <div class="mdc-chip" role="row">
+                        <div class="mdc-chip__ripple"></div>
+                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">fmd_good</i>
+                        <span role="gridcell">
                                     <span role="button" tabindex="0" class="mdc-chip__primary-action">
                                         <span class="mdc-chip__text">{{experience["location"]}}</span>
                                     </span>
                                 </span>
-                        </div>
-                    </div>
-                    {% if experience["summary"] %}
-                    <div class="experience-company-description">
-                        {{experience["summary"]}}
-                    </div>
-                    {% endif %}
-                    <div class="experience-description mdc-typography--body1">
-                        {{experience["description"]}}
-                    </div>
-                    <div class="experience-skills">{{experience["environment"]}}
                     </div>
                 </div>
+                {% if experience["summary"] %}
+                <div class="experience-company-description">
+                    {{experience["summary"]}}
+                </div>
                 {% endif %}
+                <div class="experience-description mdc-typography--body1">
+                    {{experience["description"]}}
+                </div>
+                <div class="experience-skills">{{experience["environment"]}}
+                </div>
             </div>
-            {% endfor %}
+            {% endif %}
         </div>
+        {% endfor %}
     </div>
 </main>
 </body>

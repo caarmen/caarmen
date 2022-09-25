@@ -34,19 +34,23 @@ Characteristics:
   - Meticulous
   - Analytical
 Skills:
+  - Languages:
+    - Python, Kotlin, Java, Javascript, SQL, C/C++
   - General:
-      - Continuous integration
-      - Git
-  - Android:
-      - Kotlin, Java, MVVM, modularization
-      - Room, LiveData, Data Binding, Paging
-      - Material Design, Google Play Billing
-      - Espresso, Robolectric, Mockito
+    - Technical design, refactoring, modularization
+    - Continuous integration, Jenkins pipeline, Github Actions
+    - Git, GitHub, Pull Request review, Git flow
+    - Unit test, integration test, end-to-end test, code coverage, sonar
+    - Object-oriented programming, functional programming, scripts
   - Backend:
-      - Python, MySQL/MariaDB
-      - YAML, Swagger, OpenAPI, ReDoc
-      - Django REST framework
-      - Node.js
+    - YAML, Swagger, OpenAPI, ReDoc, MySQL/MariaDB
+    - Pytest, mocha
+    - Django REST framework, Node.js
+  - Android:
+    - MVVM, Room, LiveData, Data Binding, Paging, Material Design
+    - Google Play Billing, Espresso, Robolectric, Mockito
+  - Hobby/Personal projects:
+    - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron
 Publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     publication: CLEF'04 (Cross-Language Evaluation Forum)
