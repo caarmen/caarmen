@@ -296,4 +296,14 @@ experiences:
     description: >
       Investigated the construction of properties which had damage from earthquakes. Performed structural engineering 
       calculations.
+translations:
+  contact: Contact
+  languages: Languages
+  characteristics: Characteristics
+  principles: Principles
+  experiences: Experiences
+  publications: Publications
+  education: Education
+  years: years
+  french_equivalent: "French equivalent: "
 

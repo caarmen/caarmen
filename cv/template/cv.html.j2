@@ -27,7 +27,7 @@
         <div class="panel-sidebar">
             <div class="mdc-card--outlined">
                 <div class="card-content">
-                    <div class="mdc-typography--headline6">Contact</div>
+                    <div class="mdc-typography--headline6">{{translations["contact"]}}</div>
                     <div class="key-attributes">
                         {% for contact in contacts %}
                         <div class="key-attribute">
@@ -38,7 +38,7 @@
                         </div>
                         {% endfor %}
                     </div>
-                    <div class="mdc-typography--headline6">Languages</div>
+                    <div class="mdc-typography--headline6">{{translations["languages"]}}</div>
                     <div class="key-attributes">
                         {% for language in languages %}
                         <div class="key-attribute">
@@ -47,7 +47,7 @@
                         </div>
                         {% endfor %}
                     </div>
-                    <div class="mdc-typography--headline6">Characteristics</div>
+                    <div class="mdc-typography--headline6">{{translations["characteristics"]}}</div>
                     {% for characteristic in characteristics%}
                     <div class="key-attribute">
                         <div class="key-attribute-icon"><i class="material-icons">check</i></div>
@@ -58,7 +58,7 @@
             </div>
             <div class="mdc-card--outlined">
                 <div class="card-content principles">
-                    <div class="card-title mdc-typography--headline5">Principles</div>
+                    <div class="card-title mdc-typography--headline5">{{translations["principles"]}}</div>
                     <ul class="mdc-list mdc-list--icon-list mdc-list--dense mdc-list--textual-list	">
                         {% for principle in principles %}
                         <li class="mdc-list-item">
@@ -73,7 +73,7 @@
         <div class="panel-main">
             <div class="mdc-card--outlined">
                 <div class="card-content principles">
-                    <div class="card-title mdc-typography--headline5">Skills</div>
+                    <div class="card-title mdc-typography--headline5">{{translations["skills"]}}</div>
                     <ul class="mdc-list mdc-list--icon-list mdc-list--dense mdc-list--textual-list	">
                         {% for skill_category in skills%}
                         {% for skill_category_name, skill_names in skill_category.items() %}
@@ -95,7 +95,7 @@
     </div>
     <div class="pagebreak"></div>
     <div>
-        <div class="panel-title mdc-typography--headline4">Experiences</div>
+        <div class="panel-title mdc-typography--headline4">{{translations["experiences"]}}</div>
         {% for experience in experiences%}
         {% if not experience["hide"] %}
         <div class="experience mdc-card--outlined">
@@ -124,7 +124,7 @@
                                     <span role="button" tabindex="-1" class="mdc-chip__primary-action">
                                         <span class="mdc-chip__text">{{experience["start_date_str"]}} - {{experience.get("end_date_str", "Current")}}
                                         {% if experience["duration"] %}
-                                            ({{experience["duration"]}} years)
+                                            ({{experience["duration"]}} {{translations["years"]}})
                                         {% endif %}
                                         </span>
                                     </span>
@@ -163,7 +163,7 @@
         </div>
         {% endif %}
         {% endfor %}
-        <div class="panel-title mdc-typography--headline4">Publications</div>
+        <div class="panel-title mdc-typography--headline4">{{translations["publications"]}}</div>
         <div class="mdc-card--outlined">
             <div class="card-content">
                 <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
@@ -183,7 +183,7 @@
                 </ul>
             </div>
         </div>
-        <div class="panel-title mdc-typography--headline4">Education</div>
+        <div class="panel-title mdc-typography--headline4">{{translations["education"]}}</div>
         <div class="mdc-card--outlined">
             <div class="card-content">
                 <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
@@ -194,7 +194,7 @@
                         <div class="mdc-list-item__text">
                             <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
                             <div class="education-institution">{{diploma["institution"]}}</div>
-                            <div class="education-french-equivalent">French equivalent: {{diploma["french_degree"]}}
+                            <div class="education-french-equivalent">{{translations["french_equivalent"]}}{{diploma["french_degree"]}}
                             </div>
                             <div class="">{{diploma["dates"]}}</div>
                         </div>
