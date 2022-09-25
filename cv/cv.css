@@ -140,13 +140,17 @@ body {
     font-style: italic;
 }
 .publication-title{
-    margin-top: 4px;
+    margin-top: 8px;
 }
-.education-item:before {
-    font-family: "Material Icons";
-    content:"school";
-    margin: 4px;
-    color: var(--mdc-theme-text-icon-on-light);
+.education-degree {
+    margin-top: 8px;
+}
+.education-french-equivalent{
+    color: var(--mdc-theme-text-secondary-on-light);
+}
+.education-institution{
+    color: var(--mdc-theme-text-secondary-on-light);
+    font-style: italic;
 }
 
 .card-content .mdc-list--two-line.mdc-list--icon-list .mdc-list-item, .mdc-list--two-line .mdc-list-item  {

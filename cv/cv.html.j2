@@ -162,7 +162,7 @@
         </div>
         {% endfor %}
         <div class="panel-title mdc-typography--headline4">Publications</div>
-        <div class="experience mdc-card--outlined">
+        <div class="mdc-card--outlined">
             <div class="card-content">
                 {% for publication in Publications %}
                 <div class="mdc-typography--headline6 publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
@@ -171,6 +171,17 @@
                 <div class="publication-coauthors">Co-authors: {{publication["coauthors"]}}</div>
                 {% endif %}
                 <div>{{publication["date"]}}, {{publication["publication"]}}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="panel-title mdc-typography--headline4">Education</div>
+        <div class="mdc-card--outlined">
+            <div class="card-content">
+                {% for diploma in Education %}
+                <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
+                <div class="education-institution">{{diploma["institution"]}}</div>
+                <div class="education-french-equivalent">French equivalent: {{diploma["french_degree"]}}</div>
+                <div class="">{{diploma["dates"]}}</div>
                 {% endfor %}
             </div>
         </div>
