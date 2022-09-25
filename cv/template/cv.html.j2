@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.js"></script>
-    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="assets/cv.css">
 </head>
 <body>
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
     <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <img class="avatar" src="avatar.jpg">
+            <img class="avatar" src="assets/avatar.jpg">
             <div>
                 <div class="mdc-top-app-bar__title">{{ MainInfo["name"] }}</div>
                 <div class="mdc-top-app-bar__title mdc-typography--subtitle1">{{MainInfo["title"]}} -
@@ -32,7 +32,7 @@
                         {% for contact in Contacts %}
                         {% for contact_key, contact_item in contact.items() %}
                         <div class="key-attribute">
-                            <div class="key-attribute-icon"><img src="{{ contact_item['Icon']}}"></div>
+                            <div class="key-attribute-icon"><img src="assets/{{ contact_item['Icon']}}"></div>
                             <div class="key-attribute-text">{{contact_item["Address"]}}</div>
                         </div>
                         {% endfor %}
@@ -104,11 +104,11 @@
             <div class="card-content">
                 {% if experience["company_logo"]%}
                 <div class="experience-company-logo">
-                    <img src="{{experience['company_logo']}}"
+                    <img src="assets/{{experience['company_logo']}}"
                          title="{{experience['company']}}"
                          alt="{{experience['company']}}">
                     {% if experience["customer_logo"]%}
-                    <img src="{{experience['customer_logo']}}"
+                    <img src="assets/{{experience['customer_logo']}}"
                          title="{{experience['customer']}}"
                          alt="{{experience['customer']}}">
                     {% endif %}

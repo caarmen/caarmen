@@ -41,7 +41,7 @@ env = Environment(
     autoescape=select_autoescape()
 )
 
-template = env.get_template("cv.html.j2")
+template = env.get_template("template/cv.html.j2")
 cv_rendered = template.render(**cv_yaml_data)
 
 print(cv_rendered)
