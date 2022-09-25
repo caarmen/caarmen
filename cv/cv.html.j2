@@ -161,6 +161,19 @@
             {% endif %}
         </div>
         {% endfor %}
+        <div class="panel-title mdc-typography--headline4">Publications</div>
+        <div class="experience mdc-card--outlined">
+            <div class="card-content">
+                {% for publication in Publications %}
+                <div class="mdc-typography--headline6 publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
+                </div>
+                {% if publication["coauthors"] %}
+                <div class="publication-coauthors">Co-authors: {{publication["coauthors"]}}</div>
+                {% endif %}
+                <div>{{publication["date"]}}, {{publication["publication"]}}</div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </main>
 </body>

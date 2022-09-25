@@ -134,6 +134,14 @@ body {
     margin: 4px;
     color: var(--mdc-theme-text-icon-on-light);
 }
+
+.publication-coauthors{
+    color: var(--mdc-theme-text-secondary-on-light);
+    font-style: italic;
+}
+.publication-title{
+    margin-top: 4px;
+}
 .education-item:before {
     font-family: "Material Icons";
     content:"school";
