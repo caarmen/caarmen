@@ -164,25 +164,41 @@
         <div class="panel-title mdc-typography--headline4">Publications</div>
         <div class="mdc-card--outlined">
             <div class="card-content">
-                {% for publication in Publications %}
-                <div class="mdc-typography--headline6 publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
-                </div>
-                {% if publication["coauthors"] %}
-                <div class="publication-coauthors">Co-authors: {{publication["coauthors"]}}</div>
-                {% endif %}
-                <div>{{publication["date"]}}, {{publication["publication"]}}</div>
-                {% endfor %}
+                <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
+                    {% for publication in Publications %}
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <div class="mdc-list-item__text">
+                            <div class="mdc-typography--headline6 publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
+                            </div>
+                            {% if publication["coauthors"] %}
+                            <div class="publication-coauthors">Co-authors: {{publication["coauthors"]}}</div>
+                            {% endif %}
+                            <div>{{publication["date"]}}, {{publication["publication"]}}</div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
         <div class="panel-title mdc-typography--headline4">Education</div>
         <div class="mdc-card--outlined">
             <div class="card-content">
-                {% for diploma in Education %}
-                <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
-                <div class="education-institution">{{diploma["institution"]}}</div>
-                <div class="education-french-equivalent">French equivalent: {{diploma["french_degree"]}}</div>
-                <div class="">{{diploma["dates"]}}</div>
-                {% endfor %}
+                <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
+                    {% for diploma in Education %}
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__graphic"><img src="assets/{{diploma['logo']}}"></span>
+                        <div class="mdc-list-item__text">
+                            <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
+                            <div class="education-institution">{{diploma["institution"]}}</div>
+                            <div class="education-french-equivalent">French equivalent: {{diploma["french_degree"]}}
+                            </div>
+                            <div class="">{{diploma["dates"]}}</div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
