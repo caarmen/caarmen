@@ -12,7 +12,7 @@
 <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
     <div class="mdc-top-app-bar__row">
         <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <img class="avatar" src="assets/avatar.jpg">
+            <img class="avatar" src="assets/avatar.jpg" alt="">
             <div>
                 <div class="mdc-top-app-bar__title">{{ MainInfo["name"] }}</div>
                 <div class="mdc-top-app-bar__title mdc-typography--subtitle1">{{MainInfo["title"]}} -
@@ -32,7 +32,9 @@
                         {% for contact in Contacts %}
                         {% for contact_key, contact_item in contact.items() %}
                         <div class="key-attribute">
-                            <div class="key-attribute-icon"><img src="assets/{{ contact_item['Icon']}}"></div>
+                            <div class="key-attribute-icon"><img src="assets/{{ contact_item['Icon']}}"
+                                                                 alt="{{contact_key}}"
+                                                                 title="{{contact_key}}"></div>
                             <div class="key-attribute-text">{{contact_item["Address"]}}</div>
                         </div>
                         {% endfor %}
@@ -158,8 +160,8 @@
                 <div class="experience-skills">{{experience["environment"]}}
                 </div>
             </div>
-            {% endif %}
         </div>
+        {% endif %}
         {% endfor %}
         <div class="panel-title mdc-typography--headline4">Publications</div>
         <div class="mdc-card--outlined">
@@ -188,7 +190,7 @@
                     {% for diploma in Education %}
                     <li class="mdc-list-item">
                         <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__graphic"><img src="assets/{{diploma['logo']}}"></span>
+                        <span class="mdc-list-item__graphic"><img src="assets/{{diploma['logo']}}" alt=""></span>
                         <div class="mdc-list-item__text">
                             <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
                             <div class="education-institution">{{diploma["institution"]}}</div>
