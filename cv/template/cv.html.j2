@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{translations['language']}}">
 <head>
     <meta charset="UTF-8">
     <title>{{ main_info["name"] }}</title>
@@ -122,7 +122,7 @@
                         <div class="mdc-chip__ripple"></div>
                         <span role="gridcell">
                                     <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                                        <span class="mdc-chip__text">{{experience["start_date_str"]}} - {{experience.get("end_date_str", "Current")}}
+                                        <span class="mdc-chip__text">{{experience["start_date_str"]}} - {{experience.get("end_date_str", translations["current"])}}
                                         {% if experience["duration"] %}
                                             ({{experience["duration"]}} {{translations["years"]}})
                                         {% endif %}
@@ -174,7 +174,9 @@
                             <div class="mdc-typography--headline6 publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
                             </div>
                             {% if publication["coauthors"] %}
-                            <div class="publication-coauthors">Co-authors: {{publication["coauthors"]}}</div>
+                            <div class="publication-coauthors">
+                                {{translations["coauthors"]}}{{publication["coauthors"]}}
+                            </div>
                             {% endif %}
                             <div>{{publication["date"]}}, {{publication["publication"]}}</div>
                         </div>
@@ -194,7 +196,8 @@
                         <div class="mdc-list-item__text">
                             <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
                             <div class="education-institution">{{diploma["institution"]}}</div>
-                            <div class="education-french-equivalent">{{translations["french_equivalent"]}}{{diploma["french_degree"]}}
+                            <div class="education-french-equivalent">
+                                {{translations["french_equivalent"]}}{{diploma["french_degree"]}}
                             </div>
                             <div class="">{{diploma["dates"]}}</div>
                         </div>

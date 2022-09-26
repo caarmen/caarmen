@@ -1,3 +1,6 @@
+import locale
+import os
+import sys
 from datetime import date
 from pathlib import Path
 from typing import Any, Dict
@@ -24,8 +27,9 @@ def yaml_to_template(cv_yaml: Dict[str, Any]) -> Dict[str, Any]:
     return cv_yaml
 
 
+locale.setlocale(locale.LC_TIME, os.environ.get("LC_TIME", "en_US"))
 folder = Path(__file__).parent
-file_path = folder / "cv.yaml"
+file_path = folder / "cv.yaml" if len(sys.argv) < 2 else sys.argv[1]
 with open(file_path) as file:
     cv_text = file.read()
 

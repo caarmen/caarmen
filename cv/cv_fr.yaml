@@ -2,13 +2,13 @@
 # Carmen Alvarez
 main_info:
   name: Carmen Alvarez
-  title: Software developer
+  title: Développeuse de logiciels
   location: Lyon, France
 contacts:
   - name: Email
     icon: mail.svg
     address: carmen@rmen.ca
-  - name: GitHub
+  - name: Github
     icon: github.png
     address: caarmen
 languages:
@@ -22,26 +22,26 @@ languages:
     icon: 🇪🇸
     level: oxidado
 principles:
-  - Split features into manageable iterations
-  - Release frequently
-  - Keep dependencies updated regularly
-  - Follow recommended architectures
-  - Aim for a good coverage of code by tests
-  - Separate PRs for refactoring and features
-  - Document well for others and for future self
+  - Découpage en petites itérations gérables
+  - Releases fréquentes
+  - Mise à jour régulière des libs
+  - Suivre les recommandations archi
+  - Viser une bonne couverture de code
+  - Refactoring séparé des évolutions
+  - Bien documenter pour l'équipe et pour future moi
 characteristics:
-  - Proactive
-  - Meticulous
-  - Analytical
+  - Force de proposition
+  - Minutieuse
+  - Analytique
 skills:
-  - Languages:
+  - Langages:
     - Python, Kotlin, Java, Javascript, SQL, C/C++
-  - General:
-    - Technical design, refactoring, modularization
-    - Continuous integration, Jenkins pipeline, Github Actions
+  - Général:
+    - Conception technique, refactoring, modularisation
+    - Intégration continue, Jenkins pipeline, Github Actions
     - Git, GitHub, Pull Request review, Gitflow, trunk-based development
-    - Unit test, integration test, end-to-end test, code coverage, sonar
-    - Object-oriented programming, functional programming, scripts
+    - Test unitaire, test d'intégration, test end-to-end, couverture de code, sonar
+    - Programmation orienté objet, programmation fonctionnelle, scripts
   - Backend:
     - YAML, Swagger, OpenAPI, ReDoc, MySQL/MariaDB
     - Pytest, Mocha
@@ -49,13 +49,13 @@ skills:
   - Android:
     - MVVM, Room, LiveData, Data Binding, Paging, Material Design
     - Google Play Billing, Espresso, Robolectric, Mockito
-  - Hobby/Personal projects:
+  - Projets perso/hobby:
     - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
 publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     coauthors: Ahmed Id Oumohmed, Max Mignotte, Jian-Yun Nie
     publication: CLEF'04 (Cross-Language Evaluation Forum)
-    date: Sep 15, 2004
+    date: 15 septembre 2004
     link: http://clef.isti.cnr.it/2004/working_notes/WorkingNotes2004/61.pdf
     description: >
       This report describes the approach used in our participation of ImageCLEF. Our focus is on image retrieval using 
@@ -64,13 +64,13 @@ publications:
       according to the most important types of features of the query words.
   - title: Modèles de langue en recherche d’information
     publication: Université de Montréal
-    date: Apr 29, 2004
+    date: 29 avril 2004
     link: https://papyrus.bib.umontreal.ca/xmlui/bitstream/handle/1866/14552/Alvarez_Carmen_2004_memoire.pdf
     description: Mémoire de maîtrise.
   - title: Mots composés dans les modèles de langue pour la recherche d’information
     coauthors: Philippe Langlais, Jian-Yun Nie
     publication: TALN 2004, Session Poster, Fès, 19–21 avril 2004
-    date: Apr 19, 2004
+    date: 19 avril 2004
     link: https://www.iro.umontreal.ca/~felipe/Papers/paper-taln-2004b.pdf
     description: >
       Une approche classique en recherche d’information (RI) consiste à bâtir une représentation des documents et des 
@@ -83,9 +83,9 @@ publications:
 education:
   - institution: Université de Montréal
     logo: udem.png
-    degree: Master of Science, Computer Science
+    degree: Maîtrise ès sciences, Informatique
     french_degree: Bac + 5/6
-    dates: Jan 2003 - May 2004
+    dates: Janvier 2003 - Mai 2004
   - institution: California State Polytechnic University-Pomona
     logo: cpp.png
     degree: Bachelor of Science, Computer Science
@@ -98,46 +98,46 @@ education:
     dates: 1994 - 1998
     clubs: ASCE, Chi Epsilon, Tau Beta Pi
 experiences:
-  - title: Design And Development Engineer (Backend)
+  - title: Ingénieur Conception et Développements (Backend)
     company: Genymobile
     company_logo: genymobile.png
     start: 2022-03-01
     location: Lyon, France
     team: 3 back, 2 front
     summary: >
-      Development on a SaaS platform, providing Android virtual devices in the cloud, using a microservices 
-      architecture.
+      Développement sur une plateforme SaaS, avec une architecture basée sur des microservices, qui propose des
+      devices virtuels Android dans le cloud
     description: >
-      Technical design, estimation and planning of feature epics.
+      Conception technique, estimation et planification des évolutions epics.
 
 
-      Coordination with the front-end team for REST endpoint design.
+      Coordination avec l’équipe front-end pour la conception des endpoints REST.
 
 
-      Designed and implemented the migration of data from one microservice to another.
+      Conception et implémentation de la migration de données depuis un microservice vers un autre.
 
 
-      Performance optimization of SQL operations.
+      Optimisation des opérations SQL.
 
 
-      Refactoring of YAML definitions to simplify the code base across microservices, and the CI.
+      Refactoring des définitions YAML afin de simplifier la code base à travers les microservices et la CI.
 
 
-      Evaluation of recursive/tree SQL implementations in a POC, for the technical design of a new feature.
+      Évaluation des implémentations récursives/d'arborescence en SQL, dans un POC, pour la conception technique d’une nouvelle fonctionnalité.
 
 
-      Maintenance: bug corrections and dependency upgrades.
+      Maintenance : corrections des anomalies et mises à jour des dépendances.
 
 
-      Investigation of potential security vulnerabilities reported by dependabot.
+      Investigation des vulnérabilités potentielles signalées par dependabot.
 
 
-      Culture of documentation, testing and collaboration.
+      Culture de documentation, test, et collaboration.
 
 
-      Organisation : Team with backend, front, QA, PO. Scrum: 3-week sprints: daily, retro, grooming, poker planning.
+      Organisation : Équipe avec backend, front, QA, PO. Scrum : sprints de 3 semaines : daily, rétro, grooming, poker planning.
     environment: >
-      Django REST framework (DRF), Python, Express (Node.js), AMQP (RabbitMQ), Unit and E2E tests (pytest, Mocha),
+      Django REST framework (DRF), Python, Express (Node.js), AMQP (RabbitMQ), tests unitaires et E2E (pytest, Mocha),
       Swagger/OpenAPI/ReDoc, MariaDB/MySQL, GitHub, Jenkins, Kibana, gateway, GraphQL
   - title: Mobile Lead
     company: Libon
@@ -147,38 +147,43 @@ experiences:
     location: Paris, France
     team: 1-2 Android, 1 iOS
     summary: >
-      Continuation of the previous experience: Still the Libon project, but directly within the Libon company.
+      Suite de l'expérience précédente : toujours le projet Libon mais au sein
+      de l'entreprise Libon.
     description: >
-      Feature development: Integrated new payment means (cash via scratch cards or qr codes, bank cards via Stripe), 
-      UI/UX redesign, integration of new products to buy.
+      Développement des évolutions : intégration des nouveaux moyens de paiement (espèces via cartes à gratter ou qr code à scanner,
+      carte bancaire via Stripe), refonte UI/UX,
+      ajout de nouveaux produits à acheter.
 
 
-      Customized the Braintree SDK to improve the 3DS validation UX for credit card purchases.
+      Customisation du SDK Braintree pour améliorer l'UX de la validation 3DS pour les achats par
+      carte bancaire.
 
 
-      Integrated A/B testing for credit card payments (Stripe vs Braintree vendors).
+      Intégration de l'A/B testing pour le paiement par carte bancaire (fournisseurs Stripe vs Braintree).
 
 
-      Migrated legacy code to modern standards: migration of screens with all the logic in activities to MVVM, 
-      migration of Robolectric tests to Espresso, migration of AsyncTask to Kotlin coroutines.
+      Migration du code legacy vers des standards récents : migration des écrans avec toute la
+      logique dans l'activity vers MVVM, migration des tests Robolectric vers Espresso,
+      migration des AsyncTask vers Kotlin coroutines.
 
 
-      Modularized the monolith project to 60 modules, for a better organization of the code base, and elimination of 
-      cyclical dependencies.
+      Modularisation du projet monolith à 60 modules, pour une meilleure organisation de la code
+      base et l'élimination des dépendances cycliques.
 
 
-      Implemented/integrated tools to improve the development of both iOS and Android platforms: generation of release 
-      notes on GitHub, monitoring of code coverage, monitoring the migration of the Oblective-C to Swift migration, 
-      Jenkins jobs to synchronize strings from Lokalise, Jenkins job to build a fork of libphonenumber for iOS.
+      Mise en place des outils pour améliorer le développement
+      des deux plateformes iOS et Android : génération des release notes sur GitHub, suivi de la couverture de code, suivi
+      de l'évolution de la migration Objective-C vers Swift,
+      jobs Jenkins pour synchroniser des strings de Lokalise, job Jenkins pour builder un fork de libphonenumber pour iOS.
 
 
-      Organization: 1 release per month on average, daily with the mobile, backend, support, and QA, PR.
+      Organisation : 1 release par mois en moyenne, daily avec les équipes mobile, backend et support, PR (même avant l'intégration d'un deuxième développeur Android).
     environment: >
      Android Studio/Gradle, Kotlin, Coroutines, MVVM, Modularisation, Androidx/Jetpack,
      Android Architecture Components, Room, LiveData, Data Binding, Paging, Material, Google Play Billing,
-     Firebase Crashlytics, Linphone, Libphonenumber, Json, Glide, Volley, Mapbox, Brainree, Sripe, GitHub, REST,
+     Firebase Crashlytics, Linphone, Libphonenumber, Json, Glide, Volley, Mapbox, Brainree, Sripe, Github, REST,
      Junit, Robolectric, Espresso, Mockito, Jenkins pipelines, Jacoco, Detekt, PR, Code Review
-  - title: Design And Development Engineer (Android)
+  - title: Ingénieur Conception et Développements (Android)
     company: Genymobile
     company_logo: genymobile.png
     customer: Orange
@@ -187,39 +192,44 @@ experiences:
     end: 2018-09-30
     location: Châtillon, France
     team: 1-13 Android
-    summary: The Libon app provides VoIPout calling to more than 150 countries.
+    summary: L’application Libon permet de passer des appels VoIPout vers + de 150 pays.
     description: >
-      Develop features and maintain the Libon Android app, which provides phone calls to mobiles and landlines over 
-      internet (VoIP).
+      Développement sur l'application Libon avec d'autres développeurs Android basés à 3 sites (Châtillon, Lannion,
+      Roumanie).
 
 
-      Integrate and customize the Linphone SDK (NDK).
+      Intégration et customisation du SDK Linphone en C/C++ (NDK).
 
 
-      Increased unit test code coverage from 25% to 88%.
+      Augmentation de la couverture de code de 20% à 85%.
 
 
-      Modernize the code base with Kotlin migration, introduction of Google architecture components (LiveData, 
-      ViewModel), and other tools released by Google (ConstaintLayout, data binding).
+      Modernisation de la code base avec la migration vers Kotlin, l'introduction des Google
+      Architecture Components (LiveData, ViewModel, Room) et d'autres outils fournis par Google (ConstraintLayout,
+      Data Binding, SMS Retriever).
 
 
-      Integration of CI tools in a dockerized Jenkins: Pipeline, Sonar, Jacoco, deployment to HockeyApp and Nexus.
+      Intégration des outils d'intégration continue (CI) dans un Jenkins avec Docker : Pipeline,
+      Sonar, Jacoco, déploiement vers HockeyApp et Nexus.
 
 
-      Integration of the Google Billing library and other 3rd party billing solutions.
+      Intégration des SDK Google Billing et Braintree pour les achats.
 
 
-      Point of contact with providers of third-party SDKs.
+      Point de contact avec les fournisseurs des SDK tierce partie.
 
 
-      Publication on the Play Store.
+      Publication sur Google Play. Suivi des crashs sur Fabric/Firebase Crashlytics.
 
 
-      Organization: Feature teams and component team, PR, code review, Scrum: 2-3 week sprints, daily, retro, demo.
+      Intégration de l'A/B testing avec Firebase Remote Config.
+
+
+      Organisation : Feature et component teams, PR review, Scrum: sprint de 2-3 semaines, daily, rétro, démo.
     environment: >
       Android Studio/Gradle, Eclipse/Maven, Kotlin, Java, C, C++, Shell, Linphone, SIP, RTP, Libphonenumber, Json,
       Retrofit, RxJava, Firebase Remote Config, Firebase Cloud Messaging (FCM), Crashlytics, Smartling, MVP, REST,
-      Robolectric, Mockito, Wiremock, Gitlab, GitHub, Jenkins, Jacoco, Sonar, Scrum, Pull Request, Code Review
+      Robolectric, Mockito, Wiremock, Gitlab, Github, Jenkins, Jacoco, Sonar, Scrum, Pull Request, Code Review
   - title: Senior Consultant
     company: Ariba
     company_logo: ariba.png
@@ -227,20 +237,20 @@ experiences:
     end: 2011-02-28
     location: Paris, France
     team: 1-3 Devs
-    summary: Ariba provides applications and B-to-B services for spend management.
+    summary: Ariba fournit des applications et services B-to-B d’amélioration du processus d’achat.
     description: >
-      Customize the Ariba software for client needs.
+      Customisation du logiciel Ariba pour des besoins du client.
 
 
-      Led a team of two other developers.
+      Lead d'une équipe de 2 autres développeurs.
 
 
       Clients: AXA, Alstom, BNPP, Société Générale, Decathlon, RTE, Sanofi-Aventis.
 
 
-      Worked both at the client site and from the Ariba office.
+      Présence chez les clients ou depuis le bureau d'Ariba.
     environment: Java, Weblogic, Eclipse, Oracle, Maven, Windows, Svn, Perforce
-  - title: Software Developer/Consultant
+  - title: Consultant
     company: ESR
     company_logo: esr.png
     customer: RATP
@@ -249,21 +259,18 @@ experiences:
     end: 2006-09-30
     location: Noisy-le-Grand, France
     team: 3 Devs
-    summary: The RATP is the public transport operator in the Paris area
-    description: >
-      Developed a software to monitor equipment in the RATP stations.
+    summary: Mission à la RATP
+    description: Développement d'un logiciel de supervision d'équipements dans les stations et gares de la RATP
     environment: C++, GCC, GDB, Makefile, Java, SNMP, Linux, CVS
-  - title: Software Developer/Consultant
+  - title: Consultant
     company: Micromuse
     company_logo: micromuse.png
     customer: Network Equipment Technologies (Net.com)
     customer_logo: net_com.png
     start: 2003-07-01
     end: 2005-02-28
-    location: Remote, Part-time
-    description: >
-      Customization of the Lumos Technologies network equipment monitoring software, which was acquired by Micromuse,
-      for the customer Net.com.
+    location: Télétravail, Temps partiel
+    description: Customisation du logiciel Lumos, supervision des équipements réseau, pour les besoins de Net.com
     environment: >
       Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Member of Technical Staff
@@ -273,7 +280,7 @@ experiences:
     end: 2002-12-31
     location: Santa Monica, California
     team: 7 Devs
-    description: Developed features for a network equipment monitoring software.
+    description: Développement sur un logiciel de supervision des équipements réseau
     environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Client Integration Engineer
     company: Homepage.com
@@ -281,7 +288,7 @@ experiences:
     start: 2000-05-01
     end: 2000-10-31
     location: Los Angeles, California
-    description: Customized the B-B homepage.com software for different clients.
+    description: Customisation du logiciel B-B de homepage.com pour les besoins des différents clients
     environment: Perl, C, BSD, CVS
   - title: Programmer
     hide: True # Not enough space
@@ -289,7 +296,7 @@ experiences:
     start: 1998-12-01
     end: 2000-04-30
     location: Remote, Part-time
-    description: Developed a MahJong game with an American football theme.
+    description: Développement d’un jeu MahJong avec un thème de football américain.
     environment: Java Applet
   - title: Design engineer
     hide: True # Irrelevant and old
@@ -302,15 +309,15 @@ experiences:
       calculations.
 translations:
   contact: Contact
-  languages: Languages
-  characteristics: Characteristics
-  principles: Principles
-  experiences: Experiences
+  languages: Langues
+  characteristics: Caractéristiques
+  principles: Principes
+  experiences: Expériences
   publications: Publications
-  education: Education
-  years: years
-  french_equivalent: "French equivalent: "
-  coauthors: "Co-authors: "
-  language: en
-  current: Current
+  education: Formation
+  years: ans
+  french_equivalent: "Équivalent en France : "
+  coauthors: "Co-auteurs : "
+  language: fr
+  current: Aujourd'hui
 
