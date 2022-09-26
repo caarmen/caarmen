@@ -40,10 +40,10 @@ skills:
     - Conception technique, refactoring, modularisation
     - Intégration continue, Jenkins pipeline, Github Actions
     - Git, GitHub, Pull Request review, Gitflow, trunk-based development
-    - Test unitaire, test d'intégration, test end-to-end, couverture de code, sonar
-    - Programmation orienté objet, programmation fonctionnelle, scripts
+    - Tests unitaires, tests d'intégration, tests end-to-end, couverture de code, sonar
+    - Programmation orientée objet, programmation fonctionnelle, scripts
   - Backend:
-    - YAML, Swagger, OpenAPI, ReDoc, MySQL/MariaDB
+    - YAML, Swagger/OpenAPI, ReDoc, MySQL/MariaDB
     - Pytest, Mocha
     - Django REST framework, Node.js
   - Android:
@@ -108,7 +108,7 @@ experiences:
       Développement sur une plateforme SaaS, avec une architecture basée sur des microservices, qui propose des
       devices virtuels Android dans le cloud
     description: >
-      Conception technique, estimation et planification des évolutions epics.
+      Conception technique, estimation et planification des epics des évolutions.
 
 
       Coordination avec l’équipe front-end pour la conception des endpoints REST.
