@@ -7,7 +7,8 @@ Previously I developed mobile apps (mostly Android). You'll find a few repositor
 I've also dabbled in front end (vanilla Javascript for now).
 
 Here are some repository highlights:
-  - 🐍 Miscellaneous personal Python projects:
+  - 🐍 Miscellaneous little personal Python projects:
+    - **Poet Assistant REST api**: server in Django REST Framework: [poet-assistant-drf](https://github.com/caarmen/poet-assistant-drf)
     - **Sudoku solver**: package and CLI: [sudokusolver](https://github.com/caarmen/sudokusolver)
     - **Image resizer**: server endpoint to resize an image: [image-resizer](https://github.com/caarmen/image-resizer)
     - **Cine-today RSS**: server endpoint that returns an RSS feed of movies showing in selected theaters, today: [cine-today-rss](https://github.com/caarmen/cine-today-rss)
