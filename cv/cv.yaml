@@ -29,6 +29,7 @@ principles:
   - Aim for a good coverage of code by tests
   - Separate PRs for refactoring and features
   - Document well for others and for future self
+summary: Seasoned software developer with extensive experience in multiple tech ecosystems, including Java applications, Android applications in Kotlin, and more recently backend development in Python and Node.js.
 characteristics:
   - Proactive
   - Meticulous
@@ -108,28 +109,22 @@ experiences:
       Development on a SaaS platform, providing Android virtual devices in the cloud, using a microservices 
       architecture.
     description: >
+      Development of new features, including new endpoints, and jobs for data migration and import.
+
+
+      Assist SRE team in investigation of production issues.
+
+
       Technical design, estimation and planning of feature epics.
 
 
       Coordination with the front-end team for REST endpoint design.
 
 
-      Designed and implemented the migration of data from one microservice to another.
-
-
-      Performance optimization of SQL operations.
-
-
-      Refactoring of YAML definitions to simplify the code base across microservices, and the CI.
-
-
-      Evaluation of recursive/tree SQL implementations in a POC, for the technical design of a new feature.
+      Performance optimization of SQL operations using the provided ORM.
 
 
       Maintenance: bug corrections and dependency upgrades.
-
-
-      Investigation of potential security vulnerabilities reported by dependabot.
 
 
       Culture of documentation, testing and collaboration.

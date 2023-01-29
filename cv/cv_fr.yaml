@@ -29,6 +29,7 @@ principles:
   - Viser une bonne couverture de code
   - Refactoring séparé des évolutions
   - Bien documenter pour l'équipe et pour future moi
+summary: Développeuse de logiciels avec une vaste expérience dans plusieurs écosystèmes technologiques, des applications Java aux applications Android en Kotlin et, plus récemment, dans le développement backend en Python et Node.js.
 characteristics:
   - Force de proposition
   - Minutieuse
@@ -108,28 +109,22 @@ experiences:
       Développement sur une plateforme SaaS, avec une architecture basée sur des microservices, qui propose des
       devices virtuels Android dans le cloud
     description: >
+      Développement de nouvelles fonctionnalités : endpoints et tâches pour la migration/importation de données.
+
+
+      Assister l'équipe SRE dans l'investigation des problèmes de production.
+
+
       Conception technique, estimation et planification des epics des évolutions.
 
 
       Coordination avec l’équipe front-end pour la conception des endpoints REST.
 
 
-      Conception et implémentation de la migration de données depuis un microservice vers un autre.
-
-
-      Optimisation des opérations SQL.
-
-
-      Refactoring des définitions YAML afin de simplifier la code base à travers les microservices et la CI.
-
-
-      Évaluation des implémentations récursives/d'arborescence en SQL, dans un POC, pour la conception technique d’une nouvelle fonctionnalité.
+      Optimisation des opérations SQL en s'appuyant sur l'ORM.
 
 
       Maintenance : corrections des anomalies et mises à jour des dépendances.
-
-
-      Investigation des vulnérabilités potentielles signalées par dependabot.
 
 
       Culture de documentation, test, et collaboration.
