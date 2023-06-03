@@ -13,6 +13,8 @@ I've also dabbled in front end (vanilla Javascript for now).
 
 Here are some repository highlights:
   - 🐍 Miscellaneous little personal Python projects:
+    - **Slack health bot**: posts messages to slack for Withings weight and Fitbit sleep data: [slack-health-bot](https://github.com/caarmen/slack-health-bot).
+    - **Weather slack profile photo**: Changes your slack profile photo based on the current weather conditions: [weather-slack-profile-photo](https://github.com/caarmen/weather-slack-profile-photo) 
     - **Poet Assistant REST api**: server in Django REST Framework: [poet-assistant-drf](https://github.com/caarmen/poet-assistant-drf)
     - **Sudoku solver**: package and CLI: [sudokusolver](https://github.com/caarmen/sudokusolver)
     - **Image resizer**: server endpoint to resize an image: [image-resizer](https://github.com/caarmen/image-resizer)
