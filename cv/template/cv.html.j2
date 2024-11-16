@@ -89,60 +89,52 @@
             </div>
             <div class="section-heading">{{translations["conferences"]}}</div>
             <div>
-                <ul>
+                <div class="conferences">
                     {% for conference in conferences %}
-                    <li>
+                    {% if not conference["hide"] %}
+                    <div class="conference">
                         <div class="conference-title">{{conference["title"]}}</div>
-                        <div>{{conference["conference"]}}</div>
-                    </li>
+                        <div class="conference-conference">{{conference["conference"]}}</div>
+                    </div>
+                    {% endif %}
                     {% endfor %}
-                </ul>
+                </div>
             </div>
             <div class="section-heading">{{translations["publications"]}}</div>
             <div>
-                <ul>
-                    {% for publication in publications %}
-                    <li>
-                        <div>
-                            <div class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
-                            </div>
-                            {% if publication["coauthors"] %}
-                            <div class="publication-coauthors">
-                                {{translations["coauthors"]}}{{publication["coauthors"]}}
-                            </div>
-                            {% endif %}
-                            <div>{{publication["date"]}}, {{publication["publication"]}}</div>
-                        </div>
-                    </li>
-                    {% endfor %}
-                </ul>
+                {% for publication in publications %}
+                <div>
+                    <div class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
+                    </div>
+                    {% if publication["coauthors"] %}
+                    <div class="publication-coauthors">
+                        {{translations["coauthors"]}}{{publication["coauthors"]}}
+                    </div>
+                    {% endif %}
+                    <div>{{publication["date"]}}, {{publication["publication"]}}</div>
+                </div>
+                {% endfor %}
             </div>
             <div class="section-heading">{{translations["education"]}}</div>
-            <div>
-                <ul>
-                    {% for diploma in education %}
-                    {% if not diploma["hide"] %}
-                    <li>
-                        <div>
-                            <div class="education-degree">{{diploma["degree"]}}</div>
-                            <div class="education-institution">{{diploma["institution"]}}</div>
-                            <div>{{translations["french_equivalent"]}}{{diploma["french_degree"]}}</div>
-                        </div>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
+            <div class="educations">
+                {% for diploma in education %}
+                {% if not diploma["hide"] %}
+                <div class="education">
+                    <div class="education-degree">{{diploma["degree"]}}</div>
+                    <div class="education-institution">{{diploma["institution"]}}</div>
+                    <div>{{translations["french_equivalent"]}}{{diploma["french_degree"]}}</div>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
         <div>
             <div class="section-heading">{{translations["principles"]}}</div>
-            <ul>
+            <div class="principles">
                 {% for principle in principles %}
-                <li>
-                    <span>{{principle}}</span>
-                </li>
+                <div class="principle">{{principle}}</div>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
     </main>
 </body>

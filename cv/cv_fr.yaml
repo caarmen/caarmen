@@ -41,18 +41,18 @@ skills:
     - Java
     - Javascript
     - SQL
-  - Architecture:
+  - Concepts:
     - Conception technique
     - Refactoring & Modularisation
     - Injection de dépendances.
     - Microservices
+    - Migration de BDD
   - Backend:
     - Django REST framework
     - Node.js / Express.js / Sequelize
     - RabbitMQ
     - OpenAPI
     - MySQL / MariaDB
-    - DB migrations
   - Devops:
     - Intégration continue
     - Jenkins pipeline
@@ -77,8 +77,10 @@ conferences:
     conference: AndroidMakers by droidcon, Paris, 2024
   - title: Introduction et comparaison des frameworks REST en Python
     conference: Meetup Python AFPY, Lyon, 2024
+    hide: true
   - title: Introduction à pytest
     conference: Meetup Python AFPY, Lyon, 2024
+    hide: true
 publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     coauthors: Ahmed Id Oumohmed, Max Mignotte, Jian-Yun Nie
@@ -286,6 +288,7 @@ experiences:
     description: Développement d'un logiciel de supervision d'équipements dans les stations et gares de la RATP
     environment: C++, GCC, GDB, Makefile, Java, SNMP, Linux, CVS
   - title: Consultant
+    hide: True # Not enough space
     company: Micromuse
     company_logo: micromuse.png
     customer: Network Equipment Technologies (Net.com)
@@ -297,6 +300,7 @@ experiences:
     environment: >
       Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Member of Technical Staff
+    hide: True # Not enough space
     company: Lumos Technologies
     company_logo: lumos.png
     start: 2000-11-01
@@ -306,6 +310,7 @@ experiences:
     description: Développement sur un logiciel de supervision des équipements réseau
     environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Client Integration Engineer
+    hide: True # Not enough space
     company: Homepage.com
     company_logo: homepage.png
     start: 2000-05-01

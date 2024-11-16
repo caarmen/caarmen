@@ -5,6 +5,7 @@
     --title-font: Arial, sans-serif;
     --secondary-text-color: #888;
 }
+
 html {
     width: 21cm;
 }
@@ -13,6 +14,7 @@ a {
     color: var(--accent-color);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -26,7 +28,7 @@ body {
 header {
     text-align: center;
     background-color: var(--surface-color);
-    padding: 20px 8px;
+    padding: 8px;
     font-family: var(--title-font);
 }
 
@@ -37,17 +39,28 @@ header .contact div {
 
 table {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 4px;
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     border: 1px solid var(--table-border);
 }
 
 td {
     padding: 0px 8px;
+}
+
+td:first-child,
+th:first-child {
+    border-left: none;
+}
+
+td:last-child,
+th:last-child {
+    border-right: none;
 }
 
 th {
@@ -62,7 +75,7 @@ td ul {
 }
 
 td ul li {
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 .avatar {
@@ -70,11 +83,28 @@ td ul li {
     border-radius: 50%;
 }
 
+.conferences {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.conference-conference {
+    color: var(--secondary-text-color);
+}
+
 .conference-title {
-    font-style: italic;
+    margin-top: 8px;
 }
 
 .contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -16px;
+    /* to align with role and location */
+}
+
+.educations {
     display: flex;
     justify-content: space-between;
 }
@@ -88,7 +118,6 @@ td ul li {
 }
 
 .experience {
-    margin-bottom: 36px;
     padding: 15px;
 }
 
@@ -117,6 +146,17 @@ td ul li {
     font-size: 0.6em;
 }
 
+.principles {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.principle::before {
+    content: "✓ "
+}
+
 .publication-coauthors {
     font-style: italic;
 }
@@ -127,6 +167,7 @@ td ul li {
 
 .section-heading {
     width: 100%;
+    background-color: var(--surface-color);
     font-weight: 900;
     text-align: center;
     border-bottom-width: 2px;
@@ -136,6 +177,7 @@ td ul li {
     padding: 10px 0;
     font-family: var(--title-font);
     text-transform: uppercase;
+    margin-top: 4px;
 }
 
 .summary {
