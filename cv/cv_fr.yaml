@@ -29,29 +29,58 @@ principles:
   - Viser une bonne couverture de code
   - Refactoring séparé des évolutions
   - Bien documenter pour l'équipe et pour future moi
-summary: Développeuse de logiciels avec une vaste expérience dans plusieurs écosystèmes technologiques, des applications Java aux applications Android en Kotlin et, plus récemment, dans le développement backend en Python et Node.js.
+summary: Développeuse logicielle expérimentée avec une expertise en développement backend utilisant Python et Node.js, ainsi qu’une solide expérience en applications desktop et web Java, et en développement Android avec Kotlin. Polyvalente et capable de s’adapter rapidement à de nouvelles technologies et domaines.
 characteristics:
   - Force de proposition
   - Minutieuse
   - Analytique
 skills:
   - Langages:
-    - Python, Kotlin, Java, Javascript, SQL, C/C++
-  - Général:
-    - Conception technique, refactoring, modularisation
-    - Intégration continue, Jenkins pipeline, Github Actions
-    - Git, GitHub, Pull Request review, Gitflow, trunk-based development
-    - Tests unitaires, tests d'intégration, tests end-to-end, couverture de code, sonar
-    - Programmation orientée objet, programmation fonctionnelle, scripts
+    - Python
+    - Kotlin
+    - Java
+    - Javascript
+    - SQL
+  - Concepts:
+    - Conception technique
+    - Refactoring & Modularisation
+    - Injection de dépendances.
+    - Microservices
+    - Migration de BDD
   - Backend:
-    - YAML, Swagger/OpenAPI, ReDoc, MySQL/MariaDB
-    - Pytest, Mocha
-    - Django REST framework, Node.js
-  - Android:
-    - MVVM, Room, LiveData, Data Binding, Paging, Material Design
-    - Google Play Billing, Espresso, Robolectric, Mockito
-  - Projets perso/hobby:
-    - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
+    - Django REST framework
+    - Node.js / Express.js / Sequelize
+    - RabbitMQ
+    - OpenAPI
+    - MySQL / MariaDB
+  - Devops:
+    - Intégration continue
+    - Jenkins pipeline
+    - Github Actions
+    - Docker
+    - Ansible
+  - Testing:
+    - Unitaire / Intégration / End-to-end
+    - Couverture de code
+    - Sonar
+    - Pytest / Mocha / Junit
+    - Factoryboy / Monkeypatch / Mockito
+  #- Android:
+  #  - MVVM, Room, LiveData, Data Binding, Paging, Material Design
+  #  - Google Play Billing, Espresso, Robolectric, Mockito
+  #- Projets perso/hobby:
+  #  - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
+conferences:
+  - title: "Optimizing SQL Queries in Django and SQLAlchemy: Tackling the N+1 Problem with ORMs"
+    conference: PyCon France, Strasbourg, 2024
+  - title: One test suite to test them all, Instrumentation and Robolectric tests
+    conference: AndroidMakers by droidcon, Paris, 2024
+  - title: Introduction et comparaison des frameworks REST en Python
+    conference: Meetup Python AFPY, Lyon, 2024
+    hide: true
+  - title: Introduction à pytest
+    conference: Meetup Python AFPY, Lyon, 2024
+    hide: true
 publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     coauthors: Ahmed Id Oumohmed, Max Mignotte, Jian-Yun Nie
@@ -93,6 +122,7 @@ education:
     french_degree: Bac + 4
     dates: 1998 - 2000
   - institution: California State Polytechnic University-Pomona
+    hide: true
     logo: cpp.png
     degree: Bachelor of Science, Civil Engineering
     french_degree: Bac + 4
@@ -258,6 +288,7 @@ experiences:
     description: Développement d'un logiciel de supervision d'équipements dans les stations et gares de la RATP
     environment: C++, GCC, GDB, Makefile, Java, SNMP, Linux, CVS
   - title: Consultant
+    hide: True # Not enough space
     company: Micromuse
     company_logo: micromuse.png
     customer: Network Equipment Technologies (Net.com)
@@ -269,6 +300,7 @@ experiences:
     environment: >
       Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Member of Technical Staff
+    hide: True # Not enough space
     company: Lumos Technologies
     company_logo: lumos.png
     start: 2000-11-01
@@ -278,6 +310,7 @@ experiences:
     description: Développement sur un logiciel de supervision des équipements réseau
     environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
   - title: Client Integration Engineer
+    hide: True # Not enough space
     company: Homepage.com
     company_logo: homepage.png
     start: 2000-05-01
@@ -315,4 +348,6 @@ translations:
   coauthors: "Co-auteurs : "
   language: fr
   current: Aujourd'hui
+  skills: Compétences
+  conferences: Conférences
 
