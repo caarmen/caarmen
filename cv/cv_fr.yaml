@@ -29,29 +29,56 @@ principles:
   - Viser une bonne couverture de code
   - Refactoring séparé des évolutions
   - Bien documenter pour l'équipe et pour future moi
-summary: Développeuse de logiciels avec une vaste expérience dans plusieurs écosystèmes technologiques, des applications Java aux applications Android en Kotlin et, plus récemment, dans le développement backend en Python et Node.js.
+summary: Développeuse logicielle, spécialisée dans le développement backend avec Python et Node.js, et disposant d'une expérience antérieure en applications desktop et web Java, ainsi qu'en développement Android avec Kotlin.
 characteristics:
   - Force de proposition
   - Minutieuse
   - Analytique
 skills:
   - Langages:
-    - Python, Kotlin, Java, Javascript, SQL, C/C++
-  - Général:
-    - Conception technique, refactoring, modularisation
-    - Intégration continue, Jenkins pipeline, Github Actions
-    - Git, GitHub, Pull Request review, Gitflow, trunk-based development
-    - Tests unitaires, tests d'intégration, tests end-to-end, couverture de code, sonar
-    - Programmation orientée objet, programmation fonctionnelle, scripts
+    - Python
+    - Kotlin
+    - Java
+    - Javascript
+    - SQL
+  - Architecture:
+    - Conception technique
+    - Refactoring & Modularisation
+    - Injection de dépendances.
+    - Microservices
   - Backend:
-    - YAML, Swagger/OpenAPI, ReDoc, MySQL/MariaDB
-    - Pytest, Mocha
-    - Django REST framework, Node.js
-  - Android:
-    - MVVM, Room, LiveData, Data Binding, Paging, Material Design
-    - Google Play Billing, Espresso, Robolectric, Mockito
-  - Projets perso/hobby:
-    - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
+    - Django REST framework
+    - Node.js / Express.js / Sequelize
+    - RabbitMQ
+    - OpenAPI
+    - MySQL / MariaDB
+    - DB migrations
+  - Devops:
+    - Intégration continue
+    - Jenkins pipeline
+    - Github Actions
+    - Docker
+    - Ansible
+  - Testing:
+    - Unitaire / Intégration / End-to-end
+    - Couverture de code
+    - Sonar
+    - Pytest / Mocha / Junit
+    - Factoryboy / Monkeypatch / Mockito
+  #- Android:
+  #  - MVVM, Room, LiveData, Data Binding, Paging, Material Design
+  #  - Google Play Billing, Espresso, Robolectric, Mockito
+  #- Projets perso/hobby:
+  #  - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
+conferences:
+  - title: "Optimizing SQL Queries in Django and SQLAlchemy: Tackling the N+1 Problem with ORMs"
+    conference: PyCon France, Strasbourg, 2024
+  - title: One test suite to test them all, Instrumentation and Robolectric tests
+    conference: AndroidMakers by droidcon, Paris, 2024
+  - title: Introduction et comparaison des frameworks REST en Python
+    conference: Meetup Python AFPY, Lyon, 2024
+  - title: Introduction à pytest
+    conference: Meetup Python AFPY, Lyon, 2024
 publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     coauthors: Ahmed Id Oumohmed, Max Mignotte, Jian-Yun Nie
@@ -93,6 +120,7 @@ education:
     french_degree: Bac + 4
     dates: 1998 - 2000
   - institution: California State Polytechnic University-Pomona
+    hide: true
     logo: cpp.png
     degree: Bachelor of Science, Civil Engineering
     french_degree: Bac + 4
@@ -315,4 +343,6 @@ translations:
   coauthors: "Co-auteurs : "
   language: fr
   current: Aujourd'hui
+  skills: Compétences
+  conferences: Conférences
 

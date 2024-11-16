@@ -1,178 +1,110 @@
 <!DOCTYPE html>
 <html lang="{{translations['language']}}">
+
 <head>
     <meta charset="UTF-8">
     <title>{{ main_info["name"] }}</title>
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="assets/cv.css">
 </head>
+
 <body>
-<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-    <div class="mdc-top-app-bar__row">
-        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-            <img class="avatar" src="assets/avatar.jpg" alt="">
+    <header>
+        <img class="avatar" src="assets/avatar.jpg" alt="">
+        <div>
+            <div>{{ main_info["name"] }}</div>
+            <div>{{main_info["title"]}} -
+                {{main_info["location"]}}
+            </div>
+            <div class="contact">
+                {% for contact in contacts %}
+                <div>{{contact["address"]}}</div>
+                {% endfor %}
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="summary">{{summary}}</div>
+        <div>
             <div>
-                <div class="mdc-top-app-bar__title">{{ main_info["name"] }}</div>
-                <div class="mdc-top-app-bar__title mdc-typography--subtitle1">{{main_info["title"]}} -
-                    {{main_info["location"]}}
-                </div>
+                <div class="section-heading">{{translations["skills"]}}</div>
+                <table>
+                    <thead>
+                        <tr>
+                            {% for skill in skills %}
+                            <th>{{ skill.keys() | first}}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {% for skill in skills %}
+                            <td>
+                                <ul>
+                                    {% set skill_values_list = skill.values() | first %}
+                                    {% for skill_value in skill_values_list %}
+                                    <li>{{skill_value | trim}}</li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </section>
-    </div>
-</header>
-<main class="mdc-top-app-bar--fixed-adjust">
-    <div class="summary">{{summary}}</div>
-    <div class="content">
-        <div class="panel-sidebar">
-            <div class="mdc-card--outlined">
-                <div class="card-content">
-                    <div class="mdc-typography--headline6">{{translations["contact"]}}</div>
-                    <div class="key-attributes">
-                        {% for contact in contacts %}
-                        <div class="key-attribute">
-                            <div class="key-attribute-icon"><img src="assets/{{ contact['icon']}}"
-                                                                 alt="{{contact['name']}}"
-                                                                 title="{{contact['name']}}"></div>
-                            <div class="key-attribute-text">{{contact["address"]}}</div>
+            <div>
+                <div class="section-heading">{{translations["experiences"]}}</div>
+                {% for experience in experiences %}
+                {% if not experience["hide"] %}
+                <div class="experience">
+                    <div class="experience-header">
+                        <div>{{experience['company']}}, {{experience["location"]}}</div>
+                        <div>
+                            <span>{{experience["start_date_str"]}} - {{experience.get("end_date_str", translations["current"])}}
+                                {% if experience["duration"] %}
+                                ({{experience["duration"]}} {{translations["years"]}})
+                                {% endif %}
+                            </span>
                         </div>
-                        {% endfor %}
                     </div>
-                    <div class="mdc-typography--headline6">{{translations["languages"]}}</div>
-                    <div class="key-attributes">
-                        {% for language in languages %}
-                        <div class="key-attribute">
-                            <div class="key-attribute-icon">{{language["icon"]}}</div>
-                            <div class="key-attribute-text">{{language["name"]}} ({{language["level"]}})</div>
+                    <div>
+                        <div class="experience-title">{{experience["title"]}}</div>
+                        {% if experience["summary"] %}
+                        <div class="experience-company-description">
+                            {{experience["summary"]}}
                         </div>
-                        {% endfor %}
+                        {% endif %}
+                        <ul>
+
+                            {% set experience_description_items = experience["description"].split("\n\n") %}
+                            {% for experience_description_item in experience_description_items %}
+                            <li>{{experience_description_item}}</li>
+                            {% endfor %}
+                        </ul>
+                        <div class="experience-skills">{{experience["environment"]}}
+                        </div>
                     </div>
-                    <div class="mdc-typography--headline6">{{translations["characteristics"]}}</div>
-                    {% for characteristic in characteristics%}
-                    <div class="key-attribute">
-                        <div class="key-attribute-icon"><i class="material-icons">check</i></div>
-                        <div class="key-attribute-text">{{characteristic}}</div>
-                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="section-heading">{{translations["conferences"]}}</div>
+            <div>
+                <ul>
+                    {% for conference in conferences %}
+                    <li>
+                        <div class="conference-title">{{conference["title"]}}</div>
+                        <div>{{conference["conference"]}}</div>
+                    </li>
                     {% endfor %}
-                </div>
+                </ul>
             </div>
-            <div class="mdc-card--outlined">
-                <div class="card-content principles">
-                    <div class="card-title mdc-typography--headline5">{{translations["principles"]}}</div>
-                    <ul class="mdc-list mdc-list--icon-list mdc-list--dense mdc-list--textual-list	">
-                        {% for principle in principles %}
-                        <li class="mdc-list-item">
-                            <span class="mdc-list-item__ripple"></span>
-                            <span class="mdc-list-item__text">{{principle}}</span>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="panel-main">
-            <div class="mdc-card--outlined">
-                <div class="card-content principles">
-                    <div class="card-title mdc-typography--headline5">{{translations["skills"]}}</div>
-                    <ul class="mdc-list mdc-list--icon-list mdc-list--dense mdc-list--textual-list	">
-                        {% for skill_category in skills%}
-                        {% for skill_category_name, skill_names in skill_category.items() %}
-                        <li class="mdc-list-item">
-                            <span class="mdc-list-item__ripple"></span>
-                            <span class="mdc-list-item__text skill-category">{{skill_category_name}}</span>
-                        </li>
-                        {% for skill_name in skill_names%}
-                        <li class="mdc-list-item">
-                            <span class="mdc-list-item__text">{{skill_name}}</span>
-                        </li>
-                        {% endfor %}
-                        {% endfor %}
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pagebreak"></div>
-    <div>
-        <div class="panel-title mdc-typography--headline4">{{translations["experiences"]}}</div>
-        {% for experience in experiences%}
-        {% if not experience["hide"] %}
-        <div class="experience mdc-card--outlined">
-            <div class="card-content">
-                {% if experience["company_logo"]%}
-                <div class="experience-company-logo">
-                    <img src="assets/{{experience['company_logo']}}"
-                         title="{{experience['company']}}"
-                         alt="{{experience['company']}}">
-                    {% if experience["customer_logo"]%}
-                    <img src="assets/{{experience['customer_logo']}}"
-                         title="{{experience['customer']}}"
-                         alt="{{experience['customer']}}">
-                    {% endif %}
-                </div>
-                <div class="experience-title">{{experience["title"]}}</div>
-                {% else %}
-                <div class="experience-title">{{experience["title"]}}</div>
-                <div class="experience-company">{{experience['company']}}</div>
-                {% endif %}
-                <div class="mdc-chip-set" role="grid">
-                    <div class="mdc-chip" role="row">
-                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">calendar_today</i>
-                        <div class="mdc-chip__ripple"></div>
-                        <span role="gridcell">
-                                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                                        <span class="mdc-chip__text">{{experience["start_date_str"]}} - {{experience.get("end_date_str", translations["current"])}}
-                                        {% if experience["duration"] %}
-                                            ({{experience["duration"]}} {{translations["years"]}})
-                                        {% endif %}
-                                        </span>
-                                    </span>
-                                </span>
-                    </div>
-                    {% if experience["team"] %}
-                    <div class="mdc-chip" role="row">
-                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">group</i>
-                        <div class="mdc-chip__ripple"></div>
-                        <span role="gridcell">
-                                    <span role="button" tabindex="-1" class="mdc-chip__primary-action">
-                                        <span class="mdc-chip__text">{{experience["team"]}}</span>
-                                    </span>
-                                </span>
-                    </div>
-                    {% endif %}
-                    <div class="mdc-chip" role="row">
-                        <div class="mdc-chip__ripple"></div>
-                        <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">fmd_good</i>
-                        <span role="gridcell">
-                                    <span role="button" tabindex="0" class="mdc-chip__primary-action">
-                                        <span class="mdc-chip__text">{{experience["location"]}}</span>
-                                    </span>
-                                </span>
-                    </div>
-                </div>
-                {% if experience["summary"] %}
-                <div class="experience-company-description">
-                    {{experience["summary"]}}
-                </div>
-                {% endif %}
-                <div class="experience-description mdc-typography--body1">{{experience["description"]}}</div>
-                <div class="experience-skills">{{experience["environment"]}}
-                </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-        <div class="panel-title mdc-typography--headline4">{{translations["publications"]}}</div>
-        <div class="mdc-card--outlined">
-            <div class="card-content">
-                <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
+            <div class="section-heading">{{translations["publications"]}}</div>
+            <div>
+                <ul>
                     {% for publication in publications %}
-                    <li class="mdc-list-item">
-                        <span class="mdc-list-item__ripple"></span>
-                        <div class="mdc-list-item__text">
-                            <div class="mdc-typography--headline6 publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
+                    <li>
+                        <div>
+                            <div class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
                             </div>
                             {% if publication["coauthors"] %}
                             <div class="publication-coauthors">
@@ -185,29 +117,34 @@
                     {% endfor %}
                 </ul>
             </div>
-        </div>
-        <div class="panel-title mdc-typography--headline4">{{translations["education"]}}</div>
-        <div class="mdc-card--outlined">
-            <div class="card-content">
-                <ul class="mdc-list mdc-list--icon-list mdc-list--two-line">
+            <div class="section-heading">{{translations["education"]}}</div>
+            <div>
+                <ul>
                     {% for diploma in education %}
-                    <li class="mdc-list-item">
-                        <span class="mdc-list-item__ripple"></span>
-                        <span class="mdc-list-item__graphic"><img src="assets/{{diploma['logo']}}" alt=""></span>
-                        <div class="mdc-list-item__text">
-                            <div class="mdc-typography--headline6 education-degree">{{diploma["degree"]}}</div>
+                    {% if not diploma["hide"] %}
+                    <li>
+                        <div>
+                            <div class="education-degree">{{diploma["degree"]}}</div>
                             <div class="education-institution">{{diploma["institution"]}}</div>
-                            <div class="education-french-equivalent">
-                                {{translations["french_equivalent"]}}{{diploma["french_degree"]}}
-                            </div>
-                            <div class="">{{diploma["dates"]}}</div>
+                            <div>{{translations["french_equivalent"]}}{{diploma["french_degree"]}}</div>
                         </div>
                     </li>
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
         </div>
-    </div>
-</main>
+        <div>
+            <div class="section-heading">{{translations["principles"]}}</div>
+            <ul>
+                {% for principle in principles %}
+                <li>
+                    <span>{{principle}}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
 </body>
+
 </html>
