@@ -8,25 +8,28 @@
 </head>
 
 <body>
-    <header>
-        <img class="avatar" src="assets/avatar.jpg" alt="">
-        <div>
-            <div>{{ main_info["name"] }}</div>
-            <div>{{main_info["title"]}} -
-                {{main_info["location"]}}
-            </div>
-            <div class="contact">
-                {% for contact in contacts %}
-                <div>{{contact["address"]}}</div>
-                {% endfor %}
-            </div>
-        </div>
+    <header class="cv-header">
+        <address class="contact grid-item-start">
+            <div>{{contacts[0]["address"]}}</div>
+        </address>
+        <figure>
+            <img class="avatar" src="assets/avatar.jpg" alt="">
+            <figcaption>
+                <div>{{ main_info["name"] }}</div>
+                <div>{{main_info["title"]}} -
+                    {{main_info["location"]}}
+                </div>
+            </figcaption>
+        </figure>
+        <address class="contact grid-item-end">
+            <div>{{contacts[1]["address"]}}</div>
+        </address>
     </header>
     <main>
         <div class="summary">{{summary}}</div>
         <div>
             <div>
-                <div class="section-heading">{{translations["skills"]}}</div>
+                <header class="section-heading">{{translations["skills"]}}</header>
                 <table>
                     <thead>
                         <tr>
@@ -51,12 +54,12 @@
                     </tbody>
                 </table>
             </div>
-            <div>
-                <div class="section-heading">{{translations["experiences"]}}</div>
+            <section>
+                <header class="section-heading">{{translations["experiences"]}}</header>
                 {% for experience in experiences %}
                 {% if not experience["hide"] %}
-                <div class="experience">
-                    <div class="experience-header">
+                <article class="experience">
+                    <header class="experience-header">
                         <div>{{experience['company']}}, {{experience["location"]}}</div>
                         <div>
                             <span>{{experience["start_date_str"]}} - {{experience.get("end_date_str", translations["current"])}}
@@ -65,7 +68,7 @@
                                 {% endif %}
                             </span>
                         </div>
-                    </div>
+                    </header>
                     <div>
                         <div class="experience-title">{{experience["title"]}}</div>
                         {% if experience["summary"] %}
@@ -80,30 +83,29 @@
                             <li>{{experience_description_item}}</li>
                             {% endfor %}
                         </ul>
-                        <div class="experience-skills">{{experience["environment"]}}
-                        </div>
+                        <footer class="experience-skills">{{experience["environment"]}}</footer>
                     </div>
-                </div>
+                </article>
                 {% endif %}
                 {% endfor %}
-            </div>
-            <div class="section-heading">{{translations["conferences"]}}</div>
-            <div>
+            </section>
+            <section>
+                <header class="section-heading">{{translations["conferences"]}}</header>
                 <div class="conferences">
                     {% for conference in conferences %}
                     {% if not conference["hide"] %}
-                    <div class="conference">
+                    <article class="conference">
                         <div class="conference-title">{{conference["title"]}}</div>
                         <div class="conference-conference">{{conference["conference"]}}</div>
-                    </div>
+                    </article>
                     {% endif %}
                     {% endfor %}
                 </div>
-            </div>
-            <div class="section-heading">{{translations["publications"]}}</div>
-            <div>
+            </section>
+            <section>
+                <header class="section-heading">{{translations["publications"]}}</header>
                 {% for publication in publications %}
-                <div>
+                <article>
                     <div class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
                     </div>
                     {% if publication["coauthors"] %}
@@ -112,30 +114,32 @@
                     </div>
                     {% endif %}
                     <div>{{publication["date"]}}, {{publication["publication"]}}</div>
-                </div>
+                </article>
                 {% endfor %}
-            </div>
-            <div class="section-heading">{{translations["education"]}}</div>
-            <div class="educations">
-                {% for diploma in education %}
-                {% if not diploma["hide"] %}
-                <div class="education">
-                    <div class="education-degree">{{diploma["degree"]}}</div>
-                    <div class="education-institution">{{diploma["institution"]}}</div>
-                    <div>{{translations["french_equivalent"]}}{{diploma["french_degree"]}}</div>
+            </section>
+            <section>
+                <header class="section-heading">{{translations["education"]}}</header>
+                <div class="educations">
+                    {% for diploma in education %}
+                    {% if not diploma["hide"] %}
+                    <article class="education">
+                        <div class="education-degree">{{diploma["degree"]}}</div>
+                        <div class="education-institution">{{diploma["institution"]}}</div>
+                        <div>{{translations["french_equivalent"]}}{{diploma["french_degree"]}}</div>
+                    </article>
+                    {% endif %}
+                    {% endfor %}
                 </div>
-                {% endif %}
-                {% endfor %}
-            </div>
+            </section>
         </div>
-        <div>
-            <div class="section-heading">{{translations["principles"]}}</div>
+        <section>
+            <header class="section-heading">{{translations["principles"]}}</header>
             <div class="principles">
                 {% for principle in principles %}
                 <div class="principle">{{principle}}</div>
                 {% endfor %}
             </div>
-        </div>
+        </section>
     </main>
 </body>
 

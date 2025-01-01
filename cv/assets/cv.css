@@ -25,16 +25,32 @@ body {
     font-weight: 300;
 }
 
-header {
+header.cv-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-between;
+    align-items: flex-end;
     text-align: center;
     background-color: var(--surface-color);
     padding: 8px;
     font-family: var(--title-font);
 }
 
-header .contact div {
+header.cv-header figure {
+    margin: 0px;
+}
+
+header.cv-header .contact div {
     font-size: 0.9em;
     color: var(--secondary-text-color);
+}
+
+.grid-item-start {
+    justify-self: start;
+}
+
+.grid-item-end {
+    justify-self: end;
 }
 
 table {
@@ -95,13 +111,6 @@ td ul li {
 
 .conference-title {
     margin-top: 8px;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -16px;
-    /* to align with role and location */
 }
 
 .educations {
