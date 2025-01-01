@@ -10,7 +10,7 @@ contacts:
     address: carmen@rmen.ca
   - name: Github
     icon: github.png
-    address: caarmen
+    address: "GitHub : @caarmen"
 languages:
   - name: English
     icon: 🇬🇧
