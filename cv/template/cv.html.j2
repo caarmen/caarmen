@@ -55,12 +55,12 @@
                 </table>
             </div>
             <section>
-                <header class="section-heading">{{translations["experiences"]}}</header>
+                <h2 class="section-heading">{{translations["experiences"]}}</h2>
                 {% for experience in experiences %}
                 {% if not experience["hide"] %}
                 <article class="experience">
                     <header class="experience-header">
-                        <div>{{experience['company']}}, {{experience["location"]}}</div>
+                        <h2>{{experience['company']}}, {{experience["location"]}}</h2>
                         <div>
                             <span>{{experience["start_date_str"]}} - {{experience.get("end_date_str", translations["current"])}}
                                 {% if experience["duration"] %}
@@ -90,12 +90,12 @@
                 {% endfor %}
             </section>
             <section>
-                <header class="section-heading">{{translations["conferences"]}}</header>
+                <h2 class="section-heading">{{translations["conferences"]}}</h2>
                 <div class="conferences">
                     {% for conference in conferences %}
                     {% if not conference["hide"] %}
                     <article class="conference">
-                        <div class="conference-title">{{conference["title"]}}</div>
+                        <h2 class="conference-title">{{conference["title"]}}</h2>
                         <div class="conference-conference">{{conference["conference"]}}</div>
                     </article>
                     {% endif %}
@@ -103,11 +103,10 @@
                 </div>
             </section>
             <section>
-                <header class="section-heading">{{translations["publications"]}}</header>
+                <h2 class="section-heading">{{translations["publications"]}}</h2>
                 {% for publication in publications %}
-                <article>
-                    <div class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a>
-                    </div>
+                <article class="publication">
+                    <h2 class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a></h2>
                     {% if publication["coauthors"] %}
                     <div class="publication-coauthors">
                         {{translations["coauthors"]}}{{publication["coauthors"]}}
@@ -118,12 +117,12 @@
                 {% endfor %}
             </section>
             <section>
-                <header class="section-heading">{{translations["education"]}}</header>
+                <h2 class="section-heading">{{translations["education"]}}</h2>
                 <div class="educations">
                     {% for diploma in education %}
                     {% if not diploma["hide"] %}
                     <article class="education">
-                        <div class="education-degree">{{diploma["degree"]}}</div>
+                        <h2 class="education-degree">{{diploma["degree"]}}</h2>
                         <div class="education-institution">{{diploma["institution"]}}</div>
                         <div>{{translations["french_equivalent"]}}{{diploma["french_degree"]}}</div>
                     </article>
@@ -133,7 +132,7 @@
             </section>
         </div>
         <section>
-            <header class="section-heading">{{translations["principles"]}}</header>
+            <h2 class="section-heading">{{translations["principles"]}}</h2>
             <div class="principles">
                 {% for principle in principles %}
                 <div class="principle">{{principle}}</div>
