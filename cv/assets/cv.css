@@ -1,13 +1,24 @@
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+
+    :root:lang(fr) {
+        font-size: 0.91rem;
+    }
+
+    :root:lang(en) {
+        font-size: 0.95rem;
+    }
+}
+
+
 :root {
     --accent-color: #00796b;
     --surface-color: #f4f7f6;
     --table-border: #888;
     --title-font: Arial, sans-serif;
     --secondary-text-color: #888;
-}
-
-html {
-    width: 21cm;
 }
 
 a {
@@ -20,9 +31,17 @@ a:hover {
 }
 
 body {
-    margin: 0px;
     background-color: white;
     font-weight: 300;
+    width: 21cm;
+
+    @media screen {
+        margin: 16px auto;
+    }
+
+    @media print {
+        margin: 0px;
+    }
 }
 
 header.cv-header {
@@ -41,7 +60,7 @@ header.cv-header figure {
 }
 
 header.cv-header .contact div {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: var(--secondary-text-color);
 }
 
@@ -147,12 +166,12 @@ td ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: var(--secondary-text-color);
 }
 
 .experience-skills {
-    font-size: 0.6em;
+    font-size: 0.6rem;
 }
 
 .principles {
