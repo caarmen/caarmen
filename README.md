@@ -1,10 +1,11 @@
+<img alt="Badge" height="20px" src="https://androidweekly.net/issues/issue-708/badge">
+
 ### Hi there 👋
 
 #### TLDR
 I'm a software developer currently focused on mainly on Python and Node.js for backend projects professionally, and Python for random personal projects.
 
 ----
-
 #### What you'll find here
 Previously I developed mobile apps (mostly Android). You'll find a few repositories here for Android and iOS apps.
 
