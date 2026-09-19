@@ -29,6 +29,7 @@ principles:
   - Viser une bonne couverture de tests
   - Séparer les PR de refactoring et de fonctionnalités
   - Documenter pour les autres et pour soi-même
+  - Vérifier et valider rigoureusement tout code et information fournis par les outils d'IA
 summary: >
   Développeuse back-end : 20 ans de développement logiciel,
   dont 5 ans en production sur une plateforme SaaS cloud en microservices.
@@ -146,7 +147,6 @@ experiences:
       Forte croissance des abonnements de 423% depuis 2022.
 
 
-
       Lead technique - Authentification OAuth2 (Client Desktop) : pilotage de la conception et de l'implémentation, avec une étroite coordination inter-équipes (back-end / desktop).
 
 
@@ -176,6 +176,9 @@ experiences:
 
 
       Encadrement au sein de l'équipe SaaS (code review, mentoring, référente).
+
+
+      Création d'un workflow de préparation de contexte pour les revues de code assistées par IA, optimisant la consommation de tokens et améliorant la qualité des revues.
 
 
       Organisation Scrum, sprints de 3 semaines.

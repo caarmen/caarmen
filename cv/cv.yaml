@@ -28,6 +28,7 @@ principles:
   - Aim for good test coverage
   - Separate refactoring and feature PRs
   - Document for others and for oneself
+  - Critically evaluate and fully own all information and code derived from AI tools
 summary: >
   Back-end developer: 20 years of software development, including 5 years in production on a cloud SaaS platform using microservices. Former consultant for major accounts (critical migrations at Société Générale and France Télécom). API and distributed systems design, system interoperability (OAuth2/OIDC, Stripe, SIP), incident management and resilience. Code review, mentoring. Speaker at PyCon France 2024 and 2025.
 characteristics:
@@ -139,7 +140,6 @@ experiences:
       Strong subscription growth of 423% since 2022.
 
 
-
       Technical Lead - OAuth2 Authentication (Desktop Client): steering design and implementation, with close cross-team coordination (back-end / desktop).
 
 
@@ -168,6 +168,9 @@ experiences:
 
 
       Support and supervision within the SaaS team (code review, mentoring, lead/referent).
+
+
+      Created a context-preparation workflow for AI-assisted code reviews, optimizing token overhead and improving review quality.
 
 
       Scrum organization, 3-week sprints.
