@@ -1,121 +1,115 @@
----
 # Carmen Alvarez
 main_info:
   name: Carmen Alvarez
-  title: Software developer
+  title: Python Back-end Developer - Senior
   location: Lyon, France
 contacts:
   - name: Email
     icon: mail.svg
-    address: carmen@rmen.ca
+    address: <a href="mailto:carmen@rmen.ca">carmen@rmen.ca</a>
   - name: GitHub
     icon: github.png
-    address: "GitHub: @caarmen"
+    address: "GitHub : <a href=\"https://github.com/caarmen\">@caarmen</a>"
 languages:
   - name: English
     icon: 🇬🇧
-    level: native
+    level: native language
   - name: Français
     icon: 🇫🇷
-    level: courant
+    level: fluent
   - name: Español
     icon: 🇪🇸
-    level: oxidado
+    level: advanced
 principles:
-  - Split features into manageable iterations
+  - Split features into short iterations
   - Release frequently
-  - Keep dependencies updated regularly
+  - Keep dependencies up to date
   - Follow recommended architectures
-  - Aim for a good coverage of code by tests
-  - Separate PRs for refactoring and features
-  - Document well for others and for future self
-summary: Experienced software developer with expertise in backend development using Python and Node.js, alongside a strong foundation in Java desktop and web applications, and Android development with Kotlin. Versatile and adept at adapting to new technologies and domains.
+  - Aim for good test coverage
+  - Separate refactoring and feature PRs
+  - Document for others and for oneself
+summary: >
+  Back-end developer: 20 years of software development, including 5 years in production on a cloud SaaS platform using microservices. Former consultant for major accounts (critical migrations at Société Générale and France Télécom). API and distributed systems design, system interoperability (OAuth2/OIDC, Stripe, SIP), incident management and resilience. Code review, mentoring. Speaker at PyCon France 2024 and 2025.
 characteristics:
   - Proactive
   - Meticulous
   - Analytical
 skills:
-  - Languages:
-    - Python
-    - Kotlin
-    - Java
-    - Javascript
-    - SQL
-  - Concepts:
-    - Technical design
-    - Refactoring & Modularization
-    - Dependency injection
-    - Microservices
-    - DB migrations
   - Backend:
-    - Django REST framework
+    - Django REST Framework
+    - SQLAlchemy / Django ORM
+    - FastAPI
     - Node.js / Express.js / Sequelize
-    - RabbitMQ
-    - OpenAPI
-    - MySQL / MariaDB
-  - Devops:
-    - Continuous integration
-    - Jenkins pipeline
-    - Github Actions
+    - MySQL / MariaDB / SQL
+  - API & Architecture:
+    - REST, OpenAPI / Swagger
+    - Microservices, distributed systems
+    - RabbitMQ (AMQP)
+    - Technical design
+    - Clean Architecture
+    - Dependency injection
+    - Refactoring & modularization
+  - Cloud & DevOps:
+    - "CI/CD: Jenkins, GitHub Actions"
     - Docker
     - Ansible
-  - Testing:
-    - Unit / Integration / End-to-end
-    - Code coverage
-    - Sonar
-    - Pytest / Mocha / Junit
-    - Factoryboy / Monkeypatch / Mockito
-  #- Android:
-  #  - MVVM, Room, LiveData, Data Binding, Paging, Material Design
-  #  - Google Play Billing, Espresso, Robolectric, Mockito
-  #- Hobby/Personal projects:
-  #  - Spring boot, Qt, FastAPI, Swift, Vanilla JS/Electron, PWA
+    - Kibana (logs, investigation)
+    - Database migrations
+  - Quality & Testing:
+    - Unit / integration / E2E tests
+    - Pytest, Factoryboy, Monkeypatch
+    - Mocha, JUnit, Mockito
+    - Code coverage, Sonar
+    - Code review
+  - Languages:
+    - Python
+    - Java
+    - Kotlin
+    - JavaScript
+    - SQL
 conferences:
+  - title: "SSO : mode d’emploi et pièges à éviter (sans perdre la tête)"
+    conference: PyCon France, Lyon, 2025
   - title: "Optimizing SQL Queries in Django and SQLAlchemy: Tackling the N+1 Problem with ORMs"
     conference: PyCon France, Strasbourg, 2024
   - title: One test suite to test them all, Instrumentation and Robolectric tests
     conference: AndroidMakers by droidcon, Paris, 2024
   - title: Introduction et comparaison des frameworks REST en Python
-    conference: Python AFPY Meetup, Lyon, 2024
+    conference: Meetup Python AFPY, Lyon, 2024
     hide: true
   - title: Introduction à pytest
-    conference: Python AFPY Meetup, Lyon, 2024
+    conference: Meetup Python AFPY, Lyon, 2024
     hide: true
 publications:
   - title: Toward Cross-Language and Cross-Media Image Retrieval
     coauthors: Ahmed Id Oumohmed, Max Mignotte, Jian-Yun Nie
     publication: CLEF'04 (Cross-Language Evaluation Forum)
-    date: Sep 15, 2004
+    date: September 15, 2004
     link: http://clef.isti.cnr.it/2004/working_notes/WorkingNotes2004/61.pdf
     description: >
       This report describes the approach used in our participation of ImageCLEF. Our focus is on image retrieval using 
       text, i.e. Cross-Media IR. To do this, we first determine the strong relationships between keywords and types of 
       visual features. Then the subset of images retrieved by text retrieval is used as examples to match other images 
       according to the most important types of features of the query words.
+    hide: true
   - title: Modèles de langue en recherche d’information
     publication: Université de Montréal
-    date: Apr 29, 2004
+    date: April 29, 2004
     link: https://papyrus.bib.umontreal.ca/xmlui/bitstream/handle/1866/14552/Alvarez_Carmen_2004_memoire.pdf
-    description: Mémoire de maîtrise.
+    description: Master's thesis.
+    hide: true
   - title: Mots composés dans les modèles de langue pour la recherche d’information
     coauthors: Philippe Langlais, Jian-Yun Nie
-    publication: TALN 2004, Session Poster, Fès, 19–21 avril 2004
-    date: Apr 19, 2004
+    publication: TALN 2004, Session Poster, Fès, April 19–21, 2004
+    date: April 19, 2004
     link: https://www.iro.umontreal.ca/~felipe/Papers/paper-taln-2004b.pdf
-    description: >
-      Une approche classique en recherche d’information (RI) consiste à bâtir une représentation des documents et des 
-      requêtes basée sur les mots simples les constituant. L’utilisation de modèles bigrammes a été étudiée, mais les 
-      contraintes sur l’ordre et l’adjacence des mots dans ces travaux ne sont pas toujours justifiées pour la 
-      recherche d’information. Nous proposons une nouvelle approche basée sur les modèles de langue qui incorporent des 
-      affinités lexicales (ALs), c’est à dire des paires non ordonnées de mots qui se trouvent proches dans un texte. 
-      Nous décrivons ce modèle et le comparons aux plus traditionnels modèles unigrammes et bigrammes ainsi qu’au 
-      modèle vectoriel.
+    hide: true
 education:
   - institution: Université de Montréal
     logo: udem.png
     degree: Master of Science, Computer Science
     french_degree: Bac + 5/6
-    dates: Jan 2003 - May 2004
+    dates: January 2003 - May 2004
   - institution: California State Polytechnic University-Pomona
     logo: cpp.png
     degree: Bachelor of Science, Computer Science
@@ -129,41 +123,66 @@ education:
     dates: 1994 - 1998
     clubs: ASCE, Chi Epsilon, Tau Beta Pi
 experiences:
-  - title: Design And Development Engineer (Backend)
+  - title: Design And Development Engineer (Back-end)
     company: Genymobile
     company_logo: genymobile.png
     start: 2022-03-01
     location: Lyon, France
     team: 3 back, 2 front
     summary: >
-      Development on a SaaS platform, providing Android virtual devices in the cloud, using a microservices 
-      architecture.
+      SaaS platform providing virtual Android devices in the cloud, using a microservices architecture.
+      Team of 5 developers (3 back, 2 front), QA, and PO.
     description: >
-      Development of new features, including new endpoints, and jobs for data migration and import.
+      Management of an emulator fleet generating over 600,000 execution minutes per year.
 
 
-      Assist SRE team in investigation of production issues.
+      Strong subscription growth of 423% since 2022.
 
 
-      Technical design, estimation and planning of feature epics.
+
+      Technical Lead - OAuth2 Authentication (Desktop Client): steering design and implementation, with close cross-team coordination (back-end / desktop).
 
 
-      Coordination with the front-end team for REST endpoint design.
+      Mediation between SaaS and Desktop teams: implementation of an iterative user story breakdown strategy compatible with our SaaS cycles.
 
 
-      Performance optimization of SQL operations using the provided ORM.
+      Resolution of critical production incidents: identification of a bug in Sequelize (transactions and retries) and implementation of retry strategies to stabilize the DB.
 
 
-      Maintenance: bug corrections and dependency upgrades.
+      Optimization of SQL performance via the ORM (N+1 problem), a topic presented at PyCon France 2024.
 
 
-      Culture of documentation, testing and collaboration.
+      Optimization of CI/CD pipelines: redesign under Jenkins Multibranch to eliminate build waiting times (up to 1 hour per PR) and bypass GitHub rate limits.
 
 
-      Organisation : Team with backend, front, QA, PO. Scrum: 3-week sprints: daily, retro, grooming, poker planning.
-    environment: >
-      Django REST framework (DRF), Python, Express (Node.js), AMQP (RabbitMQ), Unit and E2E tests (pytest, Mocha),
-      Swagger/OpenAPI/ReDoc, MariaDB/MySQL, GitHub, Jenkins, Kibana, gateway, GraphQL
+      Design, estimation, and development of Python back-end features (Django REST Framework/FastAPI): REST API endpoints (OpenAPI), data migration and import jobs.
+
+
+      Microservices architecture: Python and Node.js (Express) services, messaging via RabbitMQ (AMQP).
+
+
+      Introduction of Clean Architecture concepts for codebase scalability.
+
+
+      Integration with third-party systems: Stripe, OVHcloud, OIDC/OAuth2 identity providers.
+
+
+      Support and supervision within the SaaS team (code review, mentoring, lead/referent).
+
+
+      Scrum organization, 3-week sprints.
+    environment:
+      - Python
+      - Django
+      - FastAPI
+      - Node.js
+      - RabbitMQ
+      - MariaDB/MySQL
+      - OpenAPI
+      - pytest
+      - Mocha
+      - Jenkins
+      - Kibana
   - title: Mobile Lead
     company: Libon
     company_logo: libon.png
@@ -172,37 +191,36 @@ experiences:
     location: Paris, France
     team: 1-2 Android, 1 iOS
     summary: >
-      Continuation of the previous experience: Still the Libon project, but directly within the Libon company.
+      VoIP telephony application (same project as before, now directly at Libon).
+      Technical lead of the Android/iOS mobile team.
     description: >
-      Feature development: Integrated new payment means (cash via scratch cards or qr codes, bank cards via Stripe), 
-      UI/UX redesign, integration of new products to buy.
+      Integration of new payment methods (credit cards via Stripe, scratch cards, QR codes), customization of the Braintree SDK for 3DS validation, implementation of Stripe vs Braintree A/B testing.
 
 
-      Customized the Braintree SDK to improve the 3DS validation UX for credit card purchases.
+      Point of contact for the VoIP SDK publisher Linphone (2011-2022): analysis of SIP traces, detailed bug reports, and patch proposals recognized by the publisher.
 
 
-      Integrated A/B testing for credit card payments (Stripe vs Braintree vendors).
+      Architecture: migration of legacy code to MVVM, modularization of the monolith into 60 modules, elimination of cyclical dependencies.
 
 
-      Migrated legacy code to modern standards: migration of screens with all the logic in activities to MVVM, 
-      migration of Robolectric tests to Espresso, migration of AsyncTask to Kotlin coroutines.
+      Quality and CI/CD: code coverage monitoring, Jenkins jobs (translation synchronization, building an iOS fork of libphonenumber), automated GitHub release notes generation.
 
 
-      Modularized the monolith project to 60 modules, for a better organization of the code base, and elimination of 
-      cyclical dependencies.
-
-
-      Implemented/integrated tools to improve the development of both iOS and Android platforms: generation of release 
-      notes on GitHub, monitoring of code coverage, monitoring the migration of the Oblective-C to Swift migration, 
-      Jenkins jobs to synchronize strings from Lokalise, Jenkins job to build a fork of libphonenumber for iOS.
-
-
-      Organization: 1 release per month on average, daily with the mobile, backend, support, and QA, PR.
-    environment: >
-     Android Studio/Gradle, Kotlin, Coroutines, MVVM, Modularisation, Androidx/Jetpack,
-     Android Architecture Components, Room, LiveData, Data Binding, Paging, Material, Google Play Billing,
-     Firebase Crashlytics, Linphone, Libphonenumber, Json, Glide, Volley, Mapbox, Brainree, Sripe, GitHub, REST,
-     Junit, Robolectric, Espresso, Mockito, Jenkins pipelines, Jacoco, Detekt, PR, Code Review
+      Code reviews, daily collaboration with backend, support, and QA, one release per month.
+    environment:
+      - Kotlin
+      - Coroutines
+      - MVVM
+      - Room
+      - Stripe
+      - Google Play Billing
+      - Firebase
+      - Espresso
+      - Mockito
+      - Jenkins
+      - Jacoco
+      - Detekt
+      - REST
   - title: Design And Development Engineer (Android)
     company: Genymobile
     company_logo: genymobile.png
@@ -212,39 +230,39 @@ experiences:
     end: 2018-09-30
     location: Châtillon, France
     team: 1-13 Android
-    summary: The Libon app provides VoIPout calling to more than 150 countries.
+    summary: >
+      Libon application (VoIP calls to over 150 countries) for Orange.
+      Teams of 1 to 13 Android developers.
     description: >
-      Develop features and maintain the Libon Android app, which provides phone calls to mobiles and landlines over 
-      internet (VoIP).
+
+      Team point of contact for VoIP (Linphone SDK, SIP/RTP): diagnostic of call incidents through SIP trace analysis, in collaboration with the VoIP server team.
 
 
-      Integrate and customize the Linphone SDK (NDK).
+      Upon creation of a dedicated feature team with SIP/RTP specialists: code reviews and implementation of Git best practices.
 
 
-      Increased unit test code coverage from 25% to 88%.
+      Quality: unit test coverage increased from 25% to 88%.
 
 
-      Modernize the code base with Kotlin migration, introduction of Google architecture components (LiveData, 
-      ViewModel), and other tools released by Google (ConstaintLayout, data binding).
+      CI/CD: implementation of a containerized Jenkins (pipeline, Sonar, Jacoco, Nexus deployment). PR build time reduced by 50%.
 
 
-      Integration of CI tools in a dockerized Jenkins: Pipeline, Sonar, Jacoco, deployment to HockeyApp and Nexus.
+      Code modernization: migration to Kotlin, adoption of Architecture Components (LiveData, ViewModel).
 
 
-      Integration of the Google Billing library and other 3rd party billing solutions.
-
-
-      Point of contact with providers of third-party SDKs.
-
-
-      Publication on the Play Store.
-
-
-      Organization: Feature teams and component team, PR, code review, Scrum: 2-3 week sprints, daily, retro, demo.
-    environment: >
-      Android Studio/Gradle, Eclipse/Maven, Kotlin, Java, C, C++, Shell, Linphone, SIP, RTP, Libphonenumber, Json,
-      Retrofit, RxJava, Firebase Remote Config, Firebase Cloud Messaging (FCM), Crashlytics, Smartling, MVP, REST,
-      Robolectric, Mockito, Wiremock, Gitlab, GitHub, Jenkins, Jacoco, Sonar, Scrum, Pull Request, Code Review
+    environment:
+      - Kotlin
+      - Java
+      - C/C++
+      - Linphone
+      - SIP/RTP
+      - Retrofit
+      - RxJava
+      - Firebase
+      - Jenkins
+      - Sonar
+      - Jacoco
+      - Robolectric
   - title: Senior Consultant
     company: Ariba
     company_logo: ariba.png
@@ -252,20 +270,37 @@ experiences:
     end: 2011-02-28
     location: Paris, France
     team: 1-3 Devs
-    summary: Ariba provides applications and B-to-B services for spend management.
+    summary: >
+      Publisher of B2B spend management applications and services.
     description: >
-      Customize the Ariba software for client needs.
+      Customization of the Ariba solution for major accounts (AXA, Alstom, BNP Paribas, Société Générale, Decathlon, RTE, Sanofi-Aventis, France Télécom).
 
 
-      Led a team of two other developers.
+      Management of upgrade projects to the latest Ariba version at France Télécom and Société Générale: client support on-site, from preparation to production release.
 
 
-      Clients: AXA, Alstom, BNPP, Société Générale, Decathlon, RTE, Sanofi-Aventis.
+      Bug detection during data migration: qualification, escalation to the US publisher team, then delivery of patches and solutions to the client.
 
 
-      Worked both at the client site and from the Ariba office.
-    environment: Java, Weblogic, Eclipse, Oracle, Maven, Windows, Svn, Perforce
-  - title: Software Developer/Consultant
+      Successful Société Générale migration after several dry runs, with a Saturday cutover to avoid user impact.
+
+
+
+      Sanofi-Aventis: technical specification writing and solution design, implementation by two developers under my technical supervision.
+
+
+      Technical support for a junior developer (upskilling, answering technical questions, monitoring deliverables).
+
+
+    environment:
+      - Java
+      - Weblogic
+      - Oracle
+      - Maven
+      - Svn
+      - Perforce
+  - title: Software Developer / Consultant
+    hide: True
     company: ESR
     company_logo: esr.png
     customer: RATP
@@ -274,11 +309,18 @@ experiences:
     end: 2006-09-30
     location: Noisy-le-Grand, France
     team: 3 Devs
-    summary: The RATP is the public transport operator in the Paris area
-    description: >
-      Developed a software to monitor equipment in the RATP stations.
-    environment: C++, GCC, GDB, Makefile, Java, SNMP, Linux, CVS
-  - title: Software Developer/Consultant
+    summary: RATP is the public transport operator in the Paris region.
+    description: Development of a software to monitor equipment in RATP stations and terminals.
+    environment:
+      - C++
+      - GCC
+      - GDB
+      - Makefile
+      - Java
+      - SNMP
+      - Linux
+      - CVS
+  - title: Consultant
     hide: True # Not enough space
     company: Micromuse
     company_logo: micromuse.png
@@ -287,11 +329,15 @@ experiences:
     start: 2003-07-01
     end: 2005-02-28
     location: Remote, Part-time
-    description: >
-      Customization of the Lumos Technologies network equipment monitoring software, which was acquired by Micromuse,
-      for the customer Net.com.
-    environment: >
-      Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
+    description: Customization of Lumos software for network equipment monitoring to meet Net.com's needs.
+    environment:
+      - Java
+      - JSP
+      - Tomcat
+      - SNMP
+      - SQL
+      - Ant
+      - Windows
   - title: Member of Technical Staff
     hide: True # Not enough space
     company: Lumos Technologies
@@ -301,7 +347,14 @@ experiences:
     location: Santa Monica, California
     team: 7 Devs
     description: Developed features for a network equipment monitoring software.
-    environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
+    environment:
+      - Java
+      - JSP
+      - Tomcat
+      - SNMP
+      - SQL
+      - Ant
+      - Windows
   - title: Client Integration Engineer
     hide: True # Not enough space
     company: Homepage.com
@@ -309,8 +362,12 @@ experiences:
     start: 2000-05-01
     end: 2000-10-31
     location: Los Angeles, California
-    description: Customized the B-B homepage.com software for different clients.
-    environment: Perl, C, BSD, CVS
+    description: Customized the B2B homepage.com software for different clients.
+    environment:
+      - Perl
+      - C
+      - BSD
+      - CVS
   - title: Programmer
     hide: True # Not enough space
     company: Football.com
@@ -318,7 +375,8 @@ experiences:
     end: 2000-04-30
     location: Remote, Part-time
     description: Developed a MahJong game with an American football theme.
-    environment: Java Applet
+    environment:
+      - Java Applet
   - title: Design engineer
     hide: True # Irrelevant and old
     company: Ficcadenti & Waggoner
@@ -340,7 +398,6 @@ translations:
   french_equivalent: "French equivalent: "
   coauthors: "Co-authors: "
   language: en
-  current: Current
+  current: Present
   skills: Skills
   conferences: Conferences
-

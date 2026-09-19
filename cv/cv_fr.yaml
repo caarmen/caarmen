@@ -20,7 +20,7 @@ languages:
     level: courant
   - name: Español
     icon: 🇪🇸
-    level: notions
+    level: niveau professionnel
 principles:
   - Découper les fonctionnalités en itérations courtes
   - Livrer fréquemment
