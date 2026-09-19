@@ -7,10 +7,10 @@ main_info:
 contacts:
   - name: Email
     icon: mail.svg
-    address: carmen@rmen.ca
+    address: <a href="mailto:carmen@rmen.ca">carmen@rmen.ca</a>
   - name: GitHub
     icon: github.png
-    address: "GitHub : @caarmen"
+    address: "GitHub : <a href=\"https://github.com/caarmen\">@caarmen</a>"
 languages:
   - name: English
     icon: 🇬🇧
@@ -30,27 +30,26 @@ principles:
   - Séparer les PR de refactoring et de fonctionnalités
   - Documenter pour les autres et pour soi-même
 summary: >
-  Développeuse back-end Python et référente technique : 20 ans de développement logiciel,
-  dont 4,5 ans en production sur une plateforme SaaS cloud en microservices.
-  Ancienne consultante senior chez de grands comptes (migrations en environnement critique
+  Développeuse back-end : 20 ans de développement logiciel,
+  dont 5 ans en production sur une plateforme SaaS cloud en microservices.
+  Ex consultante chez de grands comptes (migrations en environnement critique
   chez Société Générale et France Télécom).
-  Conception d'API REST (OpenAPI) et de systèmes distribués,
-  Clean Architecture, interopérabilité entre systèmes (OAuth2/OIDC, Stripe, SIP/RTP),
+  Conception d'API et de systèmes distribués,
+  interopérabilité entre systèmes (OAuth2/OIDC, Stripe, SIP),
   gestion d'incidents et résilience. Code review, mentoring. Intervenante à PyCon France 2024 et 2025.
 characteristics:
   - Proactive
   - Méticuleuse
   - Analytique
 skills:
-  - Backend Python:
-    - Python
+  - Backend:
     - Django REST Framework
     - SQLAlchemy / ORM Django
     - FastAPI
     - Node.js / Express.js / Sequelize
     - MySQL / MariaDB / SQL
   - API & Architecture:
-    - API REST, OpenAPI / Swagger
+    - REST, OpenAPI / Swagger
     - Microservices, systèmes distribués
     - RabbitMQ (AMQP)
     - Conception technique
@@ -131,7 +130,7 @@ education:
     dates: 1994 - 1998
     clubs: ASCE, Chi Epsilon, Tau Beta Pi
 experiences:
-  - title: Ingénieure conception & développement back-end (Python)
+  - title: Ingénieure conception & développement back-end
     company: Genymobile
     company_logo: genymobile.png
     start: 2022-03-01
@@ -141,20 +140,20 @@ experiences:
       Plateforme SaaS d'appareils Android virtuels dans le cloud, en architecture microservices.
       Équipe de 5 développeurs (3 back, 2 front), QA et PO.
     description: >
+      Gestion d'une flotte d'émulateurs générant plus de 600 000 minutes d'exécution par an.
+
 
       Forte croissance des abonnements de 423% depuis 2022.
 
 
-      Gestion d'une flotte d'émulateurs générant plus de 600 000 minutes d'exécution par an.
+
+      Lead technique - Authentification OAuth2 (Client Desktop) : pilotage de la conception et de l'implémentation, avec une étroite coordination inter-équipes (back-end / desktop).
 
 
-      Lead technique - Authentification OAuth2 (Client Desktop) : pilotage de la conception et de l'implémentation, avec une étroite coordination inter-équipes (équipes back-end et desktop).
+      Médiation entre les équipes SaaS et Desktop : mise en place d'une stratégie de découpage itératif des user stories compatible avec nos cycles SaaS.
 
 
-      Médiation entre les équipes SaaS et Desktop : déblocage de l'intégration de la facturation en proposant une stratégie de découpage itératif des user stories compatible avec nos cycles SaaS.
-
-
-      Résolution de pannes critiques en production : identification d'un bug dans Sequelize (transactions et retries) et mise en place de stratégies de reprise applicative pour stabiliser la base de données.
+      Résolution de pannes critiques en production : identification d'un bug dans Sequelize (transactions et retries) et mise en place de stratégies de reprise applicative pour stabiliser la DB.
 
 
       Optimisation des performances SQL via l'ORM (problème N+1), sujet présenté à PyCon France 2024.
@@ -164,26 +163,35 @@ experiences:
 
 
       Conception, chiffrage, et développement de fonctionnalités back-end Python (Django REST Framework/FastAPI) :
-      endpoints d'API REST (OpenAPI / Swagger / ReDoc), jobs de migration et d'import de données.
+      endpoints d'API REST (OpenAPI), jobs de migration et d'import de données.
 
 
       Architecture microservices : services Python et Node.js (Express), messaging via RabbitMQ (AMQP).
 
 
-      Introduction des notions de Clean Architecture (use cases) pour la scalabilité du code base.
+      Introduction des notions de Clean Architecture pour la scalabilité de la code base.
 
 
       Intégration avec des systèmes tiers : Stripe, OVHcloud, fournisseurs d'identité OIDC/OAuth2.
 
 
-      Encadrement au sein de l'équipe SaaS (code review, mentoring, référente)
+      Encadrement au sein de l'équipe SaaS (code review, mentoring, référente).
 
 
-      Organisation Scrum : sprints de 3 semaines, daily, rétrospectives, grooming, poker planning.
-    environment: >
-      Python, Django REST Framework, FastAPI, Node.js/Express, RabbitMQ (AMQP), MariaDB/MySQL, GraphQL,
-      OpenAPI/Swagger/ReDoc, pytest, Mocha, Jenkins, GitHub, Kibana
-  - title: Mobile Lead (référente technique)
+      Organisation Scrum, sprints de 3 semaines.
+    environment:
+      - Python
+      - Django
+      - FastAPI
+      - Node.js
+      - RabbitMQ
+      - MariaDB/MySQL
+      - OpenAPI
+      - pytest
+      - Mocha
+      - Jenkins
+      - Kibana
+  - title: Mobile Lead
     company: Libon
     company_logo: libon.png
     start: 2018-10-01
@@ -209,10 +217,21 @@ experiences:
       build d'un fork de libphonenumber pour iOS), génération automatique des release notes GitHub.
 
 
-      Revues de code (PR), collaboration quotidienne avec backend, support et QA, une release par mois.
-    environment: >
-      Kotlin, Coroutines, MVVM, Jetpack, Room, Stripe, Braintree, Google Play Billing, Firebase Crashlytics,
-      JUnit, Espresso, Mockito, Jenkins, Jacoco, Detekt, GitHub, REST
+      Revues de code, collaboration quotidienne avec backend, support et QA, une release par mois.
+    environment:
+      - Kotlin
+      - Coroutines
+      - MVVM
+      - Room
+      - Stripe
+      - Google Play Billing
+      - Firebase
+      - Espresso
+      - Mockito
+      - Jenkins
+      - Jacoco
+      - Detekt
+      - REST
   - title: Ingénieure conception & développement (Android)
     company: Genymobile
     company_logo: genymobile.png
@@ -230,7 +249,7 @@ experiences:
       Interlocutrice de l'équipe sur la VoIP (SDK Linphone, SIP/RTP) : diagnostic des incidents d'appel par analyse des traces SIP, en collaboration avec l'équipe serveur VoIP.
 
 
-      Lors de la création d'une équipe feature dédiée avec des spécialistes SIP/RTP : passage à un rôle de revue de code et mise en place des bonnes pratiques Git.
+      Lors de la création d'une équipe feature dédiée avec des spécialistes SIP/RTP : revue de code et mise en place des bonnes pratiques Git.
 
 
       Qualité : couverture de tests unitaires portée de 25 % à 88 %.
@@ -242,10 +261,19 @@ experiences:
       Modernisation du code : migration vers Kotlin, adoption des Architecture Components (LiveData, ViewModel).
 
 
-      Équipes feature et composant, PR, code review, Scrum.
-    environment: >
-      Kotlin, Java, C/C++, Linphone, SIP, RTP, Retrofit, RxJava, Firebase, Jenkins, Sonar, Jacoco,
-      Wiremock, GitHub, GitLab, Robolectric, Mockito
+    environment:
+      - Kotlin
+      - Java
+      - C/C++
+      - Linphone
+      - SIP/RTP
+      - Retrofit
+      - RxJava
+      - Firebase
+      - Jenkins
+      - Sonar
+      - Jacoco
+      - Robolectric
   - title: Consultante senior
     company: Ariba
     company_logo: ariba.png
@@ -269,16 +297,20 @@ experiences:
       Migration Société Générale réussie après plusieurs répétitions à blanc (dry runs), avec bascule un samedi pour éviter tout impact sur les utilisateurs.
 
 
-      Personnalisation de la solution pour de grands comptes ; Missions menées en parallèle pour plusieurs grands comptes.
-
 
       Sanofi-Aventis : rédaction des spécifications techniques et conception des solutions, implémentation par deux développeurs sous ma responsabilité technique.
 
 
-      Pour un autre grand compte : accompagnement technique d'un développeur junior (montée en compétences, réponses aux questions techniques, suivi de ses livrables).
+      Accompagnement technique d'un développeur junior (montée en compétences, réponses aux questions techniques, suivi de ses livrables).
 
 
-    environment: Java, Weblogic, Oracle, Maven, Svn, Perforce
+    environment:
+      - Java
+      - Weblogic
+      - Oracle
+      - Maven
+      - Svn
+      - Perforce
   - title: Développeuse / Consultante
     hide: True
     company: ESR
@@ -291,7 +323,15 @@ experiences:
     team: 3 Devs
     summary: La RATP est l'opérateur de transport public en Île-de-France.
     description: Développement d'un logiciel de supervision d'équipements dans les stations et gares de la RATP
-    environment: C++, GCC, GDB, Makefile, Java, SNMP, Linux, CVS
+    environment:
+      - C++
+      - GCC
+      - GDB
+      - Makefile
+      - Java
+      - SNMP
+      - Linux
+      - CVS
   - title: Consultant
     hide: True # Not enough space
     company: Micromuse
@@ -302,8 +342,14 @@ experiences:
     end: 2005-02-28
     location: Télétravail, Temps partiel
     description: Customisation du logiciel Lumos, supervision des équipements réseau, pour les besoins de Net.com
-    environment: >
-      Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
+    environment:
+      - Java
+      - JSP
+      - Tomcat
+      - SNMP
+      - SQL
+      - Ant
+      - Windows
   - title: Member of Technical Staff
     hide: True # Not enough space
     company: Lumos Technologies
@@ -313,7 +359,14 @@ experiences:
     location: Santa Monica, California
     team: 7 Devs
     description: Développement sur un logiciel de supervision des équipements réseau
-    environment: Java, JSP, Tomcat, SNMP, SQL, Ant, Windows
+    environment:
+      - Java
+      - JSP
+      - Tomcat
+      - SNMP
+      - SQL
+      - Ant
+      - Windows
   - title: Client Integration Engineer
     hide: True # Not enough space
     company: Homepage.com
@@ -322,7 +375,11 @@ experiences:
     end: 2000-10-31
     location: Los Angeles, California
     description: Customisation du logiciel B-B de homepage.com pour les besoins des différents clients
-    environment: Perl, C, BSD, CVS
+    environment:
+      - Perl
+      - C
+      - BSD
+      - CVS
   - title: Programmer
     hide: True # Not enough space
     company: Football.com
@@ -330,7 +387,8 @@ experiences:
     end: 2000-04-30
     location: Remote, Part-time
     description: Développement d’un jeu MahJong avec un thème de football américain.
-    environment: Java Applet
+    environment:
+      - Java Applet
   - title: Design engineer
     hide: True # Irrelevant and old
     company: Ficcadenti & Waggoner
