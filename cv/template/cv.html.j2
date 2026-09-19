@@ -102,9 +102,11 @@
                     {% endfor %}
                 </div>
             </section>
+            {% set visible_publications = publications | rejectattr("hide") | list %}
+            {% if visible_publications %}
             <section>
                 <h2 class="section-heading">{{translations["publications"]}}</h2>
-                {% for publication in publications %}
+                {% for publication in visible_publications %}
                 <article class="publication">
                     <h2 class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a></h2>
                     {% if publication["coauthors"] %}
@@ -116,6 +118,7 @@
                 </article>
                 {% endfor %}
             </section>
+            {% endif %}
             <section>
                 <h2 class="section-heading">{{translations["education"]}}</h2>
                 <div class="educations">
