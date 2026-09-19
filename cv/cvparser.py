@@ -11,7 +11,7 @@ import yaml
 
 
 def to_template_date(date: date) -> str:
-    return date.strftime("%b %Y")
+    return date.strftime("%Y")
 
 
 def yaml_to_template(cv_yaml: Dict[str, Any]) -> Dict[str, Any]:
@@ -23,7 +23,7 @@ def yaml_to_template(cv_yaml: Dict[str, Any]) -> Dict[str, Any]:
         if end_date:
             experience["end_date_str"] = to_template_date(end_date)
             years = (end_date - start_date).days / 365.25
-            experience["duration"] = f"{years:.1f}"
+            # experience["duration"] = f"{years:.0f}"
     return cv_yaml
 
 

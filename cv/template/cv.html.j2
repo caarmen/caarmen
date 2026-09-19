@@ -10,14 +10,15 @@
 <body>
     <header class="cv-header">
         <address class="contact grid-item-start">
+            <div> {{main_info["location"]}}</div>
+
             <div>{{contacts[0]["address"]}}</div>
         </address>
         <figure>
             <img class="avatar" src="assets/avatar.jpg" alt="">
             <figcaption>
                 <div>{{ main_info["name"] }}</div>
-                <div>{{main_info["title"]}} -
-                    {{main_info["location"]}}
+                <div>{{main_info["title"]}}
                 </div>
             </figcaption>
         </figure>
@@ -30,7 +31,7 @@
         <div>
             <div>
                 <header class="section-heading">{{translations["skills"]}}</header>
-                <table>
+                <table class="skills-table">
                     <thead>
                         <tr>
                             {% for skill in skills %}
@@ -45,7 +46,7 @@
                                 <ul>
                                     {% set skill_values_list = skill.values() | first %}
                                     {% for skill_value in skill_values_list %}
-                                    <li>{{skill_value | trim}}</li>
+                                    <li class="skill-item">{{skill_value | trim}}</li>
                                     {% endfor %}
                                 </ul>
                             </td>
@@ -83,7 +84,11 @@
                             <li>{{experience_description_item}}</li>
                             {% endfor %}
                         </ul>
-                        <footer class="experience-skills">{{experience["environment"]}}</footer>
+                        <footer class="experience-skills">
+                        <ul>
+                        {% for skill in experience["environment"] %}<li class="skill-item">{{skill}}</li>{% endfor %}
+                        </ul>
+                        </footer>
                     </div>
                 </article>
                 {% endif %}
@@ -102,9 +107,11 @@
                     {% endfor %}
                 </div>
             </section>
+            {% set visible_publications = publications | rejectattr("hide") | list %}
+            {% if visible_publications %}
             <section>
                 <h2 class="section-heading">{{translations["publications"]}}</h2>
-                {% for publication in publications %}
+                {% for publication in visible_publications %}
                 <article class="publication">
                     <h2 class="publication-title"><a href="{{publication['link']}}">{{publication["title"]}}</a></h2>
                     {% if publication["coauthors"] %}
@@ -116,6 +123,7 @@
                 </article>
                 {% endfor %}
             </section>
+            {% endif %}
             <section>
                 <h2 class="section-heading">{{translations["education"]}}</h2>
                 <div class="educations">
