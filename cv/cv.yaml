@@ -55,6 +55,7 @@ skills:
     - Docker
     - Ansible
     - Kibana (logs, investigation)
+    - Openstack object storage
     - Database migrations
   - Quality & Testing:
     - Unit / integration / E2E tests
