@@ -1,17 +1,33 @@
 @media print {
     @page {
         size: A4 portrait;
+        margin: 1cm 1cm;
     }
 
     :root:lang(fr) {
-        font-size: 0.84rem;
+        font-size: 0.75rem;
+        margin: 0px;
     }
 
     :root:lang(en) {
-        font-size: 0.85rem;
+        font-size: 0.77rem;
+        margin: 0px;
+    }
+    body {
+        margin: 0px;
+    }
+}
+@media screen {
+    body {
+        margin: 16px auto;
+        width: 21cm;
     }
 }
 
+p, li {
+    orphans: 1;
+    widows: 1;
+}
 
 :root {
     --accent-color: #00796b;
@@ -33,15 +49,7 @@ body {
     background-color: white;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
-    width: 21cm;
-
-    @media screen {
-        margin: 16px auto;
-    }
-
-    @media print {
-        margin: 0px;
-    }
+    line-height: 1.05em;
 }
 
 header.cv-header {
